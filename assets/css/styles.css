@@ -121,6 +121,78 @@ body {
   color: #ffffff !important;
 }
 
+.film-details {
+  padding: 6rem 0;
+  background-color: #101416;
+  color: #f0f0ec;
+}
+
+.film-poster img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+}
+
+.details-eyebrow {
+  margin: 0 0 2.25rem;
+  color: rgba(240, 240, 236, 0.62);
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.synopsis-copy {
+  max-width: 32rem;
+  margin: 0;
+  color: #f0f0ec;
+  font-size: clamp(1.15rem, 1.5vw, 1.45rem);
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.release-note {
+  margin: 3rem 0 0;
+  color: rgba(240, 240, 236, 0.7);
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+.credits-list {
+  margin: 0;
+}
+
+.credit {
+  margin-bottom: 1.7rem;
+}
+
+.credit:last-child {
+  margin-bottom: 0;
+}
+
+.credit dt {
+  margin-bottom: 0.55rem;
+  color: rgba(240, 240, 236, 0.58);
+  font-size: 0.7rem;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.credit dd {
+  max-width: 24rem;
+  margin: 0;
+  color: #f0f0ec;
+  font-size: 0.85rem;
+  font-weight: 400;
+  line-height: 1.55;
+  overflow-wrap: anywhere;
+}
+
 @media (max-width: 575.98px) {
   .hero-content h1 {
     font-size: clamp(1.8rem, 10vw, 2.8rem);
@@ -135,5 +207,25 @@ body {
 
   .cloud-navbar .navbar-nav {
     gap: 1rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .film-details {
+    padding: 4.5rem 0;
+  }
+
+  .film-poster {
+    max-width: 32rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .details-eyebrow {
+    margin-bottom: 1.5rem;
+  }
+
+  .release-note {
+    margin-top: 2rem;
   }
 }
