@@ -1,0 +1,139 @@
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: #101416;
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  min-height: 100vh;
+  min-height: 100svh;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  background-image:
+    linear-gradient(
+      180deg,
+      rgba(5, 12, 15, 0.62) 0%,
+      rgba(5, 12, 15, 0.28) 42%,
+      rgba(5, 12, 15, 0.68) 100%
+    ),
+    url("../images/cloud-runner-hero-image-placeholder.jpeg");
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Keep the navbar above the hero content */
+.hero .navbar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+}
+
+/* Center title, subtitle, and CTA */
+.hero-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  width: min(90%, 900px);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  text-align: center;
+  color: #f0f0ec;
+}
+
+.hero-content h1 {
+  margin: 0 0 0.65rem;
+  color: #f0f0ec;
+  font-size: clamp(2.2rem, 5vw, 4.2rem);
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.35em;
+  margin-right: -0.35em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.hero-content p {
+  margin: 0 0 2rem;
+  color: rgba(240, 240, 236, 0.9);
+  font-size: 0.85rem;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.hero-content .btn {
+  padding: 0.7rem 1rem;
+  border-width: 1px;
+  border-radius: 0;
+  color: #f0f0ec;
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 0.18em;
+  line-height: 1.2;
+  text-transform: uppercase;
+  transition:
+    color 180ms ease,
+    background-color 180ms ease,
+    border-color 180ms ease;
+}
+
+.hero-content .btn:hover,
+.hero-content .btn:focus-visible {
+  color: #101416;
+  background-color: #f0f0ec;
+  border-color: #f0f0ec;
+}
+
+.cloud-navbar .navbar-nav {
+  gap: 1.75rem;
+}
+
+.cloud-nav-link {
+  padding: 0 !important;
+  color: rgba(240, 240, 236, 0.82) !important;
+  font-size: 0.625rem;
+  font-weight: 400;
+  letter-spacing: 0.18em;
+  line-height: 1.4;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transition: color 180ms ease;
+}
+
+.cloud-nav-link:hover,
+.cloud-nav-link:focus-visible,
+.cloud-nav-link.active {
+  color: #ffffff !important;
+}
+
+@media (max-width: 575.98px) {
+  .hero-content h1 {
+    font-size: clamp(1.8rem, 10vw, 2.8rem);
+    letter-spacing: 0.24em;
+    margin-right: -0.24em;
+  }
+
+  .hero-content p {
+    font-size: 0.7rem;
+    letter-spacing: 0.14em;
+  }
+
+  .cloud-navbar .navbar-nav {
+    gap: 1rem;
+  }
+}
