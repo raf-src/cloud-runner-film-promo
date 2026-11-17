@@ -99,7 +99,7 @@ body {
 .hero-content .btn:hover,
 .hero-content .btn:focus-visible {
   color: #101416;
-  background-color: #f0f0ec;
+  background-color: #F2A949;
   border-color: #f0f0ec;
 }
 
@@ -331,12 +331,12 @@ body {
 .updates-hero {
   min-height: 60vh;
   background-image:
-    linear-gradient(
+    /* linear-gradient(
       180deg,
       rgba(5, 12, 15, 0.7),
       rgba(5, 12, 15, 0.78)
-    ),
-    url("../images/cloud-runner-hero-image-updates-page-placeholder.jpeg");
+    ), */
+    url("../images/cloud-runner-gallery-image-2.jpg");
 }
 
 .updates-hero .hero-content p {
@@ -419,6 +419,11 @@ body {
   font-size: 0.7rem;
   letter-spacing: 0.18em;
 }
+
+/* .updates-submit:hover{
+  background-color: #f0f0ec;
+  color: #101416;
+} */
 
 .updates-confirmation {
   margin: 1.5rem 0 0;

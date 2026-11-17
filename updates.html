@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Subscribe for exclusive Cloud Runner updates."
+      content="Subscribe for exclusive Cloud Runner Film updates."
     />
 
     <link
@@ -73,37 +73,70 @@
       </nav>
 
       <div class="hero-content">
-        <h2>BE THE FIRST TO KNOW</h2><br>
-        <p>
-          Subscribe for exclusive trailer drops, advance screening dates, and
-          transmissions from the Lower Islands before Fall 2027.
-        </p><br>
-        <a class="btn btn-outline-light" href="#signup-form">
-          SUBSCRIBE
-        </a>
+        <h2>BE THE FIRST TO KNOW</h2>
+        <br />
+        <p>Get exclusive trailer drops and screening updates first</p>
+        <br />
+        <a class="btn btn-outline-light" href="#signup-form"> SUBSCRIBE </a>
       </div>
     </header>
+
+    <!-- Sign-up Form -->
 
     <main id="signup-form" class="updates-main">
       <div class="updates-form-wrapper">
         <form id="updatesForm" class="updates-form">
           <div class="mb-4">
-            <label for="fullName">Full Name</label>
-            <input id="fullName" name="fullName" type="text" required />
+            <label for="firstName">First Name</label>
+            <input id="firstName" name="firstName" type="text" required />
+          </div>
+
+          <div class="mb-4">
+            <label for="lastName">Last Name</label>
+            <input id="lastName" name="lastName" type="text" required />
+          </div>
+
+          <div class="mb-4">
+            <label for="phone">Phone Number</label>
+            <input id="phone" name="phone" type="text" required />
           </div>
 
           <div class="mb-4">
             <label for="emailAddress">Email Address</label>
-            <input id="emailAddress" name="emailAddress" type="email" required />
+            <input
+              id="emailAddress"
+              name="emailAddress"
+              type="email"
+              required
+            />
           </div>
 
           <div class="mb-4">
-            <label for="sector">Sector / Faction</label>
-            <select id="sector" name="sector">
-              <option value="">Select your sector</option>
-              <option>Lower Islands Scavenger</option>
-              <option>Upper Capital Observer</option>
-              <option>Press &amp; Screening Access</option>
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender">
+              <option value="">Gender</option>
+              <option>Male</option>
+              <option>Female</option>
+              <option>Non-binary</option>
+              <option>Prefer not to say</option>
+            </select>
+          </div>
+
+          <div class="mb-4">
+            <label for="filmType">Film Type</label>
+            <select id="filmType" name="filmType">
+              <option value="">Film Type</option>
+              <option>Action</option>
+              <option>Adventure</option>
+              <option>Animation</option>
+              <option>Arthouse</option>
+              <option>Comedy</option>
+              <option>Drama</option>
+              <option>Family</option>
+              <option>Horror</option>
+              <option>Romance</option>
+              <option>Sc-Fi</option>
+              <option>Thriller</option>
             </select>
           </div>
 
@@ -116,7 +149,11 @@
                 name="preferences"
                 value="Trailer & Clip Releases"
               />
-              <span>Trailer &amp; Clip Releases</span>
+              <span
+                >I agree that Cloud Runner Productions can send me newsletters,
+                trailer alerts, and electronic messages about Cloud Runner in
+                accordance with the Privacy and Cookies Policy.</span
+              >
             </label>
 
             <label class="updates-checkbox">
@@ -125,17 +162,26 @@
                 name="preferences"
                 value="Advance Screening Tickets"
               />
-              <span>Advance Screening Tickets</span>
+              <span
+                >I agree that Cloud Runner Productions can share my details with
+                its distribution and screening partners, who will use this to
+                keep in touch with me regarding advance screenings and
+                theatrical events.</span
+              >
             </label>
 
-            <label class="updates-checkbox">
+            <!-- <label class="updates-checkbox">
               <input
                 type="checkbox"
                 name="preferences"
                 value="Behind-the-Scenes World Lore"
               />
-              <span>Behind-the-Scenes World Lore</span>
-            </label>
+              <span
+                >You can unsubscribe from transmissions at any time. Our Privacy
+                and Cookies Policy includes further details on how your data is
+                used and stored and on how to exercise these rights.</span
+              >
+            </label> -->
           </fieldset>
 
           <div class="text-center">
