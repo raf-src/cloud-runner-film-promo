@@ -324,6 +324,106 @@ body {
   outline-offset: 4px;
 }
 
+.updates-hero {
+  min-height: 60vh;
+  background-image:
+    linear-gradient(
+      180deg,
+      rgba(5, 12, 15, 0.7),
+      rgba(5, 12, 15, 0.78)
+    ),
+    url("../images/cloud-runner-hero-image-updates-page-placeholder.jpeg");
+}
+
+.updates-hero .hero-content p {
+  max-width: 42rem;
+  margin-bottom: 0;
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  line-height: 1.7;
+  text-transform: none;
+}
+
+.updates-main {
+  background-color: #141619;
+  color: #f0f0ec;
+}
+
+.updates-form-wrapper {
+  width: min(90%, 600px);
+  margin: 0 auto;
+  padding: 5rem 0 6rem;
+}
+
+.updates-form label,
+.updates-form legend {
+  display: block;
+  margin-bottom: 0.65rem;
+  color: rgba(240, 240, 236, 0.72);
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.updates-form input[type="text"],
+.updates-form input[type="email"],
+.updates-form select {
+  width: 100%;
+  min-height: 2.8rem;
+  padding: 0.7rem 0.8rem;
+  border: 1px solid rgba(240, 240, 236, 0.3);
+  border-radius: 0;
+  outline: 0;
+  background-color: #101214;
+  color: #f0f0ec;
+}
+
+.updates-form input:focus,
+.updates-form select:focus {
+  border-color: #f0f0ec;
+  box-shadow: none;
+}
+
+.updates-form select option {
+  background-color: #101214;
+  color: #f0f0ec;
+}
+
+.updates-form fieldset {
+  padding: 0;
+  border: 0;
+}
+
+.updates-checkbox {
+  display: flex !important;
+  align-items: center;
+  gap: 0.7rem;
+  margin-bottom: 0.8rem !important;
+  color: #f0f0ec !important;
+  letter-spacing: 0.04em !important;
+  text-transform: none !important;
+}
+
+.updates-checkbox input {
+  accent-color: #f0f0ec;
+}
+
+.updates-submit {
+  padding: 0.7rem 1rem;
+  border-radius: 0;
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+}
+
+.updates-confirmation {
+  margin: 1.5rem 0 0;
+  color: #f0f0ec;
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
 @media (max-width: 575.98px) {
   .hero-content h1 {
     font-size: clamp(1.8rem, 10vw, 2.8rem);

@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Subscribe for exclusive Cloud Runner updates."
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>Get Updates | Cloud Runner</title>
+  </head>
+
+  <body>
+    <header class="hero updates-hero">
+      <nav
+        class="navbar navbar-expand-lg navbar-dark bg-transparent cloud-navbar"
+        aria-label="Primary navigation"
+      >
+        <div class="container-fluid cloud-navbar__inner">
+          <a
+            class="navbar-brand cloud-brand"
+            href="/"
+            aria-label="Cloud Runner home"
+          >
+            CLOUD RUNNER
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNavigation"
+            aria-controls="mainNavigation"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="mainNavigation">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+              <li class="nav-item">
+                <a class="nav-link cloud-nav-link" href="index.html#trailer">
+                  TRAILER
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link cloud-nav-link" href="index.html#world">
+                  WORLD
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link cloud-nav-link active"
+                  href="updates.html"
+                  aria-current="page"
+                >
+                  GET UPDATES
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="hero-content">
+        <h1>BE THE FIRST TO KNOW</h1>
+        <p>
+          Subscribe for exclusive trailer drops, advance screening dates, and
+          transmissions from the Lower Islands before Fall 2027.
+        </p>
+      </div>
+    </header>
+
+    <main class="updates-main">
+      <div class="updates-form-wrapper">
+        <form id="updatesForm" class="updates-form">
+          <div class="mb-4">
+            <label for="fullName">Full Name</label>
+            <input id="fullName" name="fullName" type="text" required />
+          </div>
+
+          <div class="mb-4">
+            <label for="emailAddress">Email Address</label>
+            <input id="emailAddress" name="emailAddress" type="email" required />
+          </div>
+
+          <div class="mb-4">
+            <label for="sector">Sector / Faction</label>
+            <select id="sector" name="sector">
+              <option value="">Select your sector</option>
+              <option>Lower Islands Scavenger</option>
+              <option>Upper Capital Observer</option>
+              <option>Press &amp; Screening Access</option>
+            </select>
+          </div>
+
+          <fieldset class="mb-4">
+            <legend>Transmission Preferences</legend>
+
+            <label class="updates-checkbox">
+              <input
+                type="checkbox"
+                name="preferences"
+                value="Trailer & Clip Releases"
+              />
+              <span>Trailer &amp; Clip Releases</span>
+            </label>
+
+            <label class="updates-checkbox">
+              <input
+                type="checkbox"
+                name="preferences"
+                value="Advance Screening Tickets"
+              />
+              <span>Advance Screening Tickets</span>
+            </label>
+
+            <label class="updates-checkbox">
+              <input
+                type="checkbox"
+                name="preferences"
+                value="Behind-the-Scenes World Lore"
+              />
+              <span>Behind-the-Scenes World Lore</span>
+            </label>
+          </fieldset>
+
+          <div class="text-center">
+            <button class="btn btn-outline-light updates-submit" type="submit">
+              SUBSCRIBE
+            </button>
+            <p
+              id="confirmationMessage"
+              class="updates-confirmation"
+              role="status"
+              hidden
+            >
+              TRANSMISSION RECEIVED
+            </p>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div
+        class="container-fluid px-4 px-lg-5 d-flex flex-column flex-md-row justify-content-between align-items-center gap-3"
+      >
+        <p class="site-footer__copyright mb-0">
+          © 2027 CLOUD RUNNER PRODUCTIONS. ALL RIGHTS RESERVED.
+        </p>
+
+        <nav aria-label="Footer navigation">
+          <ul
+            class="site-footer__links list-unstyled d-flex flex-wrap justify-content-center gap-3 gap-lg-4 mb-0"
+          >
+            <li><a href="#privacy">Privacy Policy</a></li>
+            <li><a href="#terms">Terms of Use</a></li>
+            <li><a href="#press">Press Kit</a></li>
+            <li>
+              <a href="https://instagram.com" rel="noopener noreferrer">
+                Instagram
+              </a>
+            </li>
+            <li>
+              <a href="https://x.com" rel="noopener noreferrer" aria-label="X">
+                X
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+    <script>
+      document
+        .getElementById("updatesForm")
+        .addEventListener("submit", (event) => {
+          event.preventDefault();
+          document.getElementById("confirmationMessage").hidden = false;
+          event.currentTarget.reset();
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
