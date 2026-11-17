@@ -1,3 +1,11 @@
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* =========================================================
+   Global & Variables
+   ========================================================= */
+
 html {
   scroll-behavior: smooth;
 }
@@ -10,13 +18,77 @@ body {
 body {
   margin: 0;
   background-color: #101416;
+  font-family: "Inter", sans-serif;
 }
+
+h1, h2, h3, h4, h5, h6, .navbar, .nav-link {
+  margin: 0;
+  font-family: "Inter", sans-serif !important;
+}
+
+/* =========================================================
+   Navigation & Header
+   ========================================================= */
+
+/* Keep the navbar above the hero content */
+.hero .navbar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  padding: 1.25rem 2.5rem;
+}
+
+.cloud-navbar .navbar-nav {
+  gap: 1.75rem;
+}
+
+.cloud-nav-link {
+  padding: 0 !important;
+  color: rgba(240, 240, 236, 0.82) !important;
+  font-size: 1.125rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  line-height: 2.5rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transition: color 180ms ease;
+}
+
+.cloud-nav-link:hover,
+.cloud-nav-link:focus-visible,
+.cloud-nav-link.active {
+  color: #ffffff !important;
+}
+
+.cloud-home {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 1.75rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  color: rgba(240, 240, 236, 0.82) !important;
+  text-transform: uppercase;
+  transition: color 180ms ease;
+}
+
+.cloud-home:hover,
+.cloud-home:focus-visible {
+  color: #ffffff !important;
+}
+
+
+/* =========================================================
+   Index Page
+   ========================================================= */
 
 .hero {
   position: relative;
   display: flex;
-  min-height: 100vh;
-  min-height: 100svh;
+  /* min-height: 100vh;
+  min-height: 100svh; */
+  height: 97vh;
+  min-height: 500px;
   align-items: center;
   justify-content: center;
   overflow: hidden;
@@ -33,15 +105,6 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-/* Keep the navbar above the hero content */
-.hero .navbar {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 2;
 }
 
 /* Center title, subtitle, and CTA */
@@ -73,56 +136,11 @@ body {
 .hero-content p {
   margin: 0 0 2rem;
   color: rgba(240, 240, 236, 0.9);
-  font-size: 0.85rem;
+  font-size: 1.5rem;
   font-weight: 400;
   line-height: 1.4;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-}
-
-.hero-content .btn {
-  padding: 0.7rem 1rem;
-  border-width: 1px;
-  border-radius: 0;
-  color: #f0f0ec;
-  font-size: 0.7rem;
-  font-weight: 400;
-  letter-spacing: 0.18em;
-  line-height: 1.2;
-  text-transform: uppercase;
-  transition:
-    color 180ms ease,
-    background-color 180ms ease,
-    border-color 180ms ease;
-}
-
-.hero-content .btn:hover,
-.hero-content .btn:focus-visible {
-  color: #101416;
-  background-color: #F2A949;
-  border-color: #f0f0ec;
-}
-
-.cloud-navbar .navbar-nav {
-  gap: 1.75rem;
-}
-
-.cloud-nav-link {
-  padding: 0 !important;
-  color: rgba(240, 240, 236, 0.82) !important;
-  font-size: 0.625rem;
-  font-weight: 400;
-  letter-spacing: 0.18em;
-  line-height: 1.4;
-  text-transform: uppercase;
-  white-space: nowrap;
-  transition: color 180ms ease;
-}
-
-.cloud-nav-link:hover,
-.cloud-nav-link:focus-visible,
-.cloud-nav-link.active {
-  color: #ffffff !important;
 }
 
 .film-details {
@@ -154,7 +172,7 @@ body {
   margin: 0;
   color: #f0f0ec;
   font-size: clamp(1.15rem, 1.5vw, 1.45rem);
-  font-weight: 400;
+  font-weight: 250;
   line-height: 1.6;
 }
 
@@ -210,7 +228,7 @@ body {
       rgba(5, 12, 15, 0.62),
       rgba(5, 12, 15, 0.72)
     ),
-    url("../images/cloud-runner-landscape-image-placeholder.jpeg");
+    url("../images/cloud-runner-background-image-index-page.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -225,58 +243,6 @@ body {
   text-align: center;
 }
 
-.trailer-play {
-  position: relative;
-  display: grid;
-  width: 66px;
-  height: 66px;
-  place-items: center;
-  padding: 0;
-  border: 1px solid rgba(240, 240, 236, 0.7);
-  border-radius: 50%;
-  background: transparent;
-  color: #f0f0ec;
-  cursor: pointer;
-  transition:
-    transform 180ms ease,
-    opacity 180ms ease;
-}
-
-.trailer-play::before {
-  position: absolute;
-  inset: 5px;
-  border: 1px solid #f0f0ec;
-  border-radius: 50%;
-  content: "";
-}
-
-.trailer-play__icon {
-  position: relative;
-  z-index: 1;
-  width: 0;
-  height: 0;
-  margin-left: 3px;
-  border-top: 6px solid transparent;
-  border-bottom: 6px solid transparent;
-  border-left: 9px solid #f0f0ec;
-  transition: transform 180ms ease;
-}
-
-.trailer-play:hover,
-.trailer-play:focus-visible {
-  transform: scale(1.06);
-}
-
-.trailer-play:hover .trailer-play__icon,
-.trailer-play:focus-visible .trailer-play__icon {
-  transform: scale(1.12);
-}
-
-.trailer-play:focus-visible {
-  outline: 2px solid #f0f0ec;
-  outline-offset: 5px;
-}
-
 .trailer-label {
   margin: 1.5rem 0 0;
   color: #f0f0ec;
@@ -287,46 +253,43 @@ body {
   text-transform: uppercase;
 }
 
-.site-footer {
-  width: 100%;
-  padding: 2rem 0;
-  border-top: 1px solid rgba(240, 240, 236, 0.12);
-  background-color: #080c0e;
-  color: rgba(240, 240, 236, 0.62);
+.cinematic-banner {
+  position: relative;
+  display: flex;
+  min-height: 60vh;
+  align-items: center;
+  overflow: hidden;
+  background-image:
+    /* linear-gradient(
+      90deg,
+      rgba(5, 12, 15, 0.72),
+      rgba(5, 12, 15, 0.3)
+    ), */
+    url("../images/cloud-runner-hero-image-1-index-page.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.site-footer__copyright,
-.site-footer__links a {
-  font-size: 0.75rem;
-  font-weight: 400;
-  line-height: 1.4;
-  letter-spacing: 0.12em;
+.cinematic-banner .container {
+  position: relative;
+  z-index: 1;
+}
+
+.cinematic-banner h2 {
+  max-width: 550px;
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(1.8rem, 4vw, 3.4rem);
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: 0.24em;
   text-transform: uppercase;
 }
 
-.site-footer__copyright {
-  color: rgba(240, 240, 236, 0.62);
-}
-
-.site-footer__links {
-  align-items: center;
-}
-
-.site-footer__links a {
-  color: rgba(240, 240, 236, 0.62);
-  text-decoration: none;
-  transition: color 180ms ease;
-}
-
-.site-footer__links a:hover,
-.site-footer__links a:focus-visible {
-  color: #f0f0ec;
-}
-
-.site-footer__links a:focus-visible {
-  outline: 1px solid #f0f0ec;
-  outline-offset: 4px;
-}
+/* =========================================================
+   Get Updates Page
+   ========================================================= */
 
 .updates-hero {
   min-height: 60vh;
@@ -433,38 +396,132 @@ body {
   text-transform: uppercase;
 }
 
-.cinematic-banner {
-  position: relative;
-  display: flex;
-  min-height: 60vh;
-  align-items: center;
-  overflow: hidden;
-  background-image:
-    /* linear-gradient(
-      90deg,
-      rgba(5, 12, 15, 0.72),
-      rgba(5, 12, 15, 0.3)
-    ), */
-    url("../images/cloud-runner-hero-image-1-index-page.jpeg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+/* =========================================================
+   World / Gallery Page
+   ========================================================= */
+
+/* No world.html gallery rules currently exist. */
+
+/* =========================================================
+   Footer & Shared Components
+   ========================================================= */
+
+.hero-content .btn {
+  padding: 0.85rem 1.75rem;
+  border-width: 1px solid rgba(240, 240, 236, 0.3);
+  border-radius: 0;
+  background-color: rgba(16, 20, 22, 0.4);
+  backdrop-filter: blur(8px);
+  color: #f0f0ec;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  line-height: 1.2;
+  text-transform: uppercase;
+  transition:
+    color 180ms ease,
+    background-color 180ms ease,
+    border-color 180ms ease;
 }
 
-.cinematic-banner .container {
+.hero-content .btn:hover,
+.hero-content .btn:focus-visible {
+  color: #101416;
+  background-color: #f0f0ec;
+  border-color: #f0f0ec;
+}
+
+.trailer-play {
+  position: relative;
+  display: grid;
+  width: 66px;
+  height: 66px;
+  place-items: center;
+  padding: 0;
+  border: 1px solid rgba(240, 240, 236, 0.7);
+  border-radius: 50%;
+  background: transparent;
+  color: #f0f0ec;
+  cursor: pointer;
+  transition:
+    transform 180ms ease,
+    opacity 180ms ease;
+}
+
+.trailer-play::before {
+  position: absolute;
+  inset: 5px;
+  border: 1px solid #f0f0ec;
+  border-radius: 50%;
+  content: "";
+}
+
+.trailer-play__icon {
   position: relative;
   z-index: 1;
+  width: 0;
+  height: 0;
+  margin-left: 3px;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: 9px solid #f0f0ec;
+  transition: transform 180ms ease;
 }
 
-.cinematic-banner h2 {
-  max-width: 550px;
-  margin: 0;
-  color: #ffffff;
-  font-size: clamp(1.8rem, 4vw, 3.4rem);
-  font-weight: 500;
-  line-height: 1.1;
-  letter-spacing: 0.24em;
+.trailer-play:hover,
+.trailer-play:focus-visible {
+  transform: scale(1.06);
+}
+
+.trailer-play:hover .trailer-play__icon,
+.trailer-play:focus-visible .trailer-play__icon {
+  transform: scale(1.12);
+}
+
+.trailer-play:focus-visible {
+  outline: 2px solid #f0f0ec;
+  outline-offset: 5px;
+}
+
+.site-footer {
+  width: 100%;
+  padding: 2rem 0;
+  border-top: 1px solid rgba(240, 240, 236, 0.12);
+  background-color: #080c0e;
+  color: rgba(240, 240, 236, 0.62);
+}
+
+.site-footer__copyright,
+.site-footer__links a {
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
+}
+
+.site-footer__copyright {
+  color: rgba(240, 240, 236, 0.62);
+}
+
+.site-footer__links {
+  align-items: center;
+}
+
+.site-footer__links a {
+  color: rgba(240, 240, 236, 0.62);
+  text-decoration: none;
+  transition: color 180ms ease;
+}
+
+.site-footer__links a:hover,
+.site-footer__links a:focus-visible {
+  color: #f0f0ec;
+}
+
+.site-footer__links a:focus-visible {
+  outline: 1px solid #f0f0ec;
+  outline-offset: 4px;
 }
 
 @media (max-width: 575.98px) {
