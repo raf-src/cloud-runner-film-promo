@@ -266,7 +266,7 @@ h1, h2, h3, h4, h5, h6, .navbar, .nav-link {
       rgba(5, 12, 15, 0.3)
     ), */
     url("../images/cloud-runner-hero-image-1-index-page.jpeg");
-  background-position: center;
+  background-position: center bottom 5%;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -305,7 +305,8 @@ h1, h2, h3, h4, h5, h6, .navbar, .nav-link {
 .updates-hero .hero-content p {
   max-width: 42rem;
   margin-bottom: 0;
-  font-size: 0.95rem;
+  font-size: 1.5rem;
+  font-weight: 400;
   letter-spacing: 0.04em;
   line-height: 1.7;
   text-transform: none;
