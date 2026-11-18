@@ -446,10 +446,19 @@ h1, h2, h3, h4, h5, h6, .navbar, .nav-link {
 }
 
 /* =========================================================
-   World / Gallery Page
+  Gallery Page
    ========================================================= */
 
 /* No world.html gallery rules currently exist. */
+
+.gallery-hero {
+  height: 62vh;
+  min-height: 450px;
+  background-image: url("../images/cloud-runner-hero-image-gallery-page-placeholder.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 /* =========================================================
    Footer & Shared Components
