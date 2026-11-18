@@ -308,11 +308,13 @@ h1, h2, h3, h4, h5, h6, .navbar, .nav-link {
 /* Get Updates Page */
 
 .updates-hero {
-  min-height: 60vh;
+  /* min-height: 60vh; */
+  height:100vh;
+  min-height: 100svh;
   background-image:
   url("../images/cloud-runner-hero-image-updates-page.jpg");
   background-position: center;
-  background-size: cover;
+  background-size: 118% auto;
   background-repeat: no-repeat;
 }
 
