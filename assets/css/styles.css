@@ -449,16 +449,27 @@ h1, h2, h3, h4, h5, h6, .navbar, .nav-link {
 
 .gallery-hero {
   height: 62vh;
-  min-height: 450px;
-  background-image: url("../images/cloud-runner-hero-image-gallery-page-placeholder.jpg");
+  min-height: 62vh;
+  background-image:
+    linear-gradient(
+      rgba(16, 18, 20, 0.22),
+      rgba(16, 18, 20, 0.22)
+    ),
+    url("../images/cloud-runner-hero-image-gallery-page-placeholder.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .gallery-scroll-track {
-  scroll-snap-type: x mandatory;
+  scroll-snap-type: x proximity;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
   -webkit-overflow-scrolling: touch;
+}
+
+.gallery-scroll-track::-webkit-scrollbar {
+  display: none;
 }
 
 .gallery-card {
