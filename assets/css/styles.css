@@ -460,6 +460,48 @@ h1, h2, h3, h4, h5, h6, .navbar, .nav-link {
   background-repeat: no-repeat;
 }
 
+.gallery-scroll-track {
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.gallery-card {
+  position: relative;
+  flex: 0 0 280px;
+  overflow: hidden;
+  scroll-snap-align: start;
+  border: 1px solid rgba(240, 240, 236, 0.15);
+  background-color: #101214;
+}
+
+.gallery-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+
+.gallery-card:hover img {
+  transform: scale(1.03);
+}
+
+.gallery-caption {
+  background: linear-gradient(
+    to top,
+    rgba(16, 18, 20, 0.92) 0%,
+    rgba(16, 18, 20, 0.45) 65%,
+    transparent 100%
+  );
+  color: #f0f0ec;
+}
+
+@media (min-width: 768px) {
+  .gallery-card {
+    flex: 0 0 340px;
+  }
+}
+
 /* =========================================================
    Footer & Shared Components
    ========================================================= */
