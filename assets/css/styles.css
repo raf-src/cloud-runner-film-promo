@@ -352,15 +352,17 @@ h1, h2, h3, h4, h5, h6, .navbar, .nav-link {
 
 .updates-form input[type="text"],
 .updates-form input[type="email"],
+.updates-form input[type="tel"],
 .updates-form select {
   width: 100%;
-  min-height: 2.8rem;
-  padding: 0.7rem 0.8rem;
+  min-height: 2.3rem;
+  padding: 0.35rem 0.75rem;
   border: 1px solid rgba(240, 240, 236, 0.3);
   border-radius: 0;
   outline: 0;
   background-color: #101214;
   color: #f0f0ec;
+  font-size: 0.80rem;
 }
 
 .updates-form input:focus,
@@ -411,6 +413,15 @@ h1, h2, h3, h4, h5, h6, .navbar, .nav-link {
   font-size: 0.7rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
+}
+
+.updates-disclaimer {
+  margin-top: 0.8rem;
+  margin-bottom: 0;
+  color: #f0f0ec;
+  font-size: 0.72rem;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
 }
 
 /* =========================================================
