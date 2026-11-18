@@ -1,5 +1,5 @@
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 /* Global & Variables */
 
@@ -18,7 +18,14 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6, .navbar, .nav-link {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar,
+.nav-link {
   margin: 0;
   font-family: "Inter", sans-serif !important;
 }
@@ -58,7 +65,7 @@ h1, h2, h3, h4, h5, h6, .navbar, .nav-link {
 }
 
 .cloud-home {
-  font-family: 'Inter', sans-serif !important;
+  font-family: "Inter", sans-serif !important;
   font-size: 1.75rem;
   font-weight: 500;
   letter-spacing: 0.18em;
@@ -71,7 +78,6 @@ h1, h2, h3, h4, h5, h6, .navbar, .nav-link {
 .cloud-home:focus-visible {
   color: #ffffff !important;
 }
-
 
 /* Index Page */
 
@@ -113,7 +119,7 @@ h1, h2, h3, h4, h5, h6, .navbar, .nav-link {
   height: auto;
   transform: translate(-50%, -50%);
   object-fit: cover;
-  z-index: 0; 
+  z-index: 0;
 }
 
 /* Center title, subtitle, and CTA */
@@ -166,9 +172,9 @@ h1, h2, h3, h4, h5, h6, .navbar, .nav-link {
 .film-poster {
   display: flex;
   flex-direction: column;
-  justify-content: center; 
-  align-items: center;     
-  height: 100%;            
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 .film-poster img {
@@ -245,11 +251,7 @@ h1, h2, h3, h4, h5, h6, .navbar, .nav-link {
   justify-content: center;
   overflow: hidden;
   background-image:
-    linear-gradient(
-      180deg,
-      rgba(5, 12, 15, 0.62),
-      rgba(5, 12, 15, 0.72)
-    ),
+    linear-gradient(180deg, rgba(5, 12, 15, 0.62), rgba(5, 12, 15, 0.72)),
     url("../images/cloud-runner-background-image-index-page.jpg");
   background-position: center;
   background-size: cover;
@@ -281,8 +283,7 @@ h1, h2, h3, h4, h5, h6, .navbar, .nav-link {
   min-height: 60vh;
   align-items: center;
   overflow: hidden;
-  background-image:
-  url("../images/cloud-runner-hero-image-1-index-page.jpeg");
+  background-image: url("../images/cloud-runner-hero-image-1-index-page.jpeg");
   background-position: center bottom 5%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -308,10 +309,9 @@ h1, h2, h3, h4, h5, h6, .navbar, .nav-link {
 
 .updates-hero {
   /* min-height: 60vh; */
-  height:100vh;
+  height: 100vh;
   min-height: 100svh;
-  background-image:
-  url("../images/cloud-runner-hero-image-updates-page.jpg");
+  background-image: url("../images/cloud-runner-hero-image-updates-page.jpg");
   background-position: center;
   background-size: 118% auto;
   background-repeat: no-repeat;
@@ -361,7 +361,7 @@ h1, h2, h3, h4, h5, h6, .navbar, .nav-link {
   outline: 0;
   background-color: #101214;
   color: #f0f0ec;
-  font-size: 0.80rem;
+  font-size: 0.8rem;
 }
 
 .updates-form input:focus,
@@ -451,10 +451,7 @@ h1, h2, h3, h4, h5, h6, .navbar, .nav-link {
   height: 62vh;
   min-height: 62vh;
   background-image:
-    linear-gradient(
-      rgba(16, 18, 20, 0.22),
-      rgba(16, 18, 20, 0.22)
-    ),
+    linear-gradient(rgba(16, 18, 20, 0.22), rgba(16, 18, 20, 0.22)),
     url("../images/cloud-runner-hero-image-gallery-page-placeholder.jpg");
   background-position: center;
   background-size: cover;
@@ -683,8 +680,7 @@ h1, h2, h3, h4, h5, h6, .navbar, .nav-link {
   position: relative;
   padding: clamp(3rem, 8vw, 6rem) 0;
   overflow: hidden;
-  background-image:
-    url("../images/cloud-runner-background-image-trailer-section-index-page.jpg");
+  background-image: url("../images/cloud-runner-background-image-trailer-section-index-page.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
