@@ -186,21 +186,24 @@
 
       <section
         id="trailer"
-        class="trailer-banner"
-        aria-labelledby="trailer-label"
+        class="trailer-section"
+        aria-label="Cloud Runner Official Teaser"
       >
-        <div class="trailer-content">
-          <button
-            class="trailer-play"
-            type="button"
-            aria-label="Play Cloud Runner official teaser"
-          >
-            <span class="trailer-play__icon" aria-hidden="true"></span>
-          </button>
-
-          <p class="trailer-label" id="trailer-label">
-            Cloud Runner Official Teaser
-          </p>
+        <div class="container trailer-section__container">
+          <div class="ratio ratio-16x9">
+            <video
+              controls
+              playsinline
+              preload="metadata"
+              poster="assets/images/cloud-runner-landscape-image-placeholder.jpg"
+            >
+              <source
+                src="assets/videos/cloud-runner-video-placeholder-index-page.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+          </div>
         </div>
       </section>
     </main>
