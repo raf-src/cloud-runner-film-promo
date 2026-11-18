@@ -2,9 +2,7 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-/* =========================================================
-   Global & Variables
-   ========================================================= */
+/* Global & Variables */
 
 html {
   scroll-behavior: smooth;
@@ -26,9 +24,7 @@ h1, h2, h3, h4, h5, h6, .navbar, .nav-link {
   font-family: "Inter", sans-serif !important;
 }
 
-/* =========================================================
-   Navigation & Header
-   ========================================================= */
+/* Navigation & Header */
 
 /* Keep the navbar above the hero content */
 .hero .navbar {
@@ -78,33 +74,47 @@ h1, h2, h3, h4, h5, h6, .navbar, .nav-link {
 }
 
 
-/* =========================================================
-   Index Page
-   ========================================================= */
+/* Index Page */
 
 .hero {
   position: relative;
   display: flex;
-  /* min-height: 100vh;
-  min-height: 100svh; */
+  min-height: 100vh;
+  min-height: 100svh;
   height: 97vh;
   min-height: 500px;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+}
 
-  background-image:
-    linear-gradient(
-      180deg,
-      rgba(5, 12, 15, 0.62) 0%,
-      rgba(5, 12, 15, 0.28) 42%,
-      rgba(5, 12, 15, 0.68) 100%
-    ),
-    url("../images/cloud-runner-hero-image-placeholder.jpeg");
+/* Dark gradient overlay sitting on top of the video */
+.hero:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(5, 12, 15, 0.38) 0%,
+    rgba(5, 12, 15, 0.12) 45%,
+    rgba(5, 12, 15, 0.42) 100%
+  );
+  z-index: 1;
+  pointer-events: none;
+}
 
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+/* Background Video Styling */
+.trailer-video-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: 0; 
 }
 
 /* Center title, subtitle, and CTA */
@@ -119,6 +129,11 @@ h1, h2, h3, h4, h5, h6, .navbar, .nav-link {
   margin-top: 2rem;
   text-align: center;
   color: #f0f0ec;
+}
+
+.hero-content h1,
+.hero-content p {
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.65);
 }
 
 .hero-content h1 {
@@ -268,12 +283,7 @@ h1, h2, h3, h4, h5, h6, .navbar, .nav-link {
   align-items: center;
   overflow: hidden;
   background-image:
-    /* linear-gradient(
-      90deg,
-      rgba(5, 12, 15, 0.72),
-      rgba(5, 12, 15, 0.3)
-    ), */
-    url("../images/cloud-runner-hero-image-1-index-page.jpeg");
+  url("../images/cloud-runner-hero-image-1-index-page.jpeg");
   background-position: center bottom 5%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -295,9 +305,7 @@ h1, h2, h3, h4, h5, h6, .navbar, .nav-link {
   text-transform: uppercase;
 }
 
-/* =========================================================
-   Get Updates Page
-   ========================================================= */
+/* Get Updates Page */
 
 .updates-hero {
   min-height: 60vh;
