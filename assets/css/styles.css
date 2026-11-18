@@ -1,4 +1,3 @@
-
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
@@ -376,6 +375,12 @@ h1, h2, h3, h4, h5, h6, .navbar, .nav-link {
   color: #f0f0ec;
 }
 
+.updates-form select {
+  appearance: none;
+  -webkit-appearance: none;
+  padding-right: 2.5rem;
+}
+
 .updates-form fieldset {
   padding: 0;
   border: 0;
@@ -400,6 +405,22 @@ h1, h2, h3, h4, h5, h6, .navbar, .nav-link {
   border-radius: 0;
   font-size: 0.7rem;
   letter-spacing: 0.18em;
+}
+
+.updates-form button[type="submit"] {
+  border: 1px solid #f0f0ec;
+  background-color: #f0f0ec;
+  color: #101214;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.updates-form button[type="submit"]:hover,
+.updates-form button[type="submit"]:focus-visible {
+  border: 1px solid #f0f0ec;
+  background-color: #101214;
+  color: #f0f0ec;
 }
 
 /* .updates-submit:hover{
