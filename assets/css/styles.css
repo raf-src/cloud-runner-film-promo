@@ -633,11 +633,17 @@ h6,
   outline-offset: 4px;
 }
 
+/* Mobile portrait (below 576px) */
 @media (max-width: 575.98px) {
+  .cloud-navbar .navbar-brand {
+    font-size: 0.95rem;
+    letter-spacing: 0.14em;
+  }
+
   .hero-content h1 {
-    font-size: clamp(1.8rem, 10vw, 2.8rem);
-    letter-spacing: 0.24em;
-    margin-right: -0.24em;
+    font-size: clamp(2rem, 6.8vw, 2.2rem);
+    letter-spacing: 0.16em;
+    margin-right: -0.16em;
   }
 
   .hero-content p {
@@ -660,6 +666,7 @@ h6,
   }
 }
 
+/* Tablet & small laptops (below 992px) */
 @media (max-width: 991.98px) {
   .film-details {
     padding: 4.5rem 0;
@@ -680,6 +687,7 @@ h6,
   }
 }
 
+/* Mobile landscape & small tablets (below 768px) */
 @media (max-width: 767.98px) {
   .site-footer {
     padding: 1.75rem 0;
