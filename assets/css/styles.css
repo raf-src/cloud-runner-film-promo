@@ -633,73 +633,18 @@ h6,
   outline-offset: 4px;
 }
 
-/* Mobile portrait (below 576px) */
-@media (max-width: 575.98px) {
-  .cloud-navbar .navbar-brand {
-    font-size: 0.95rem;
-    letter-spacing: 0.14em;
-  }
 
-  .hero-content h1 {
-    font-size: clamp(2rem, 6.8vw, 2.2rem);
-    letter-spacing: 0.16em;
-    margin-right: -0.16em;
-  }
 
-  .hero-content p {
-    font-size: 0.7rem;
-    letter-spacing: 0.14em;
-  }
 
-  .cloud-navbar .navbar-nav {
-    gap: 1rem;
-  }
 
-  .trailer-banner {
-    min-height: 60vh;
-  }
 
-  .trailer-label {
-    max-width: 90vw;
-    font-size: 0.65rem;
-    letter-spacing: 0.18em;
-  }
-}
 
-/* Tablet & small laptops (below 992px) */
-@media (max-width: 991.98px) {
-  .film-details {
-    padding: 4.5rem 0;
-  }
-
-  .film-poster {
-    max-width: 32rem;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  .details-eyebrow {
-    margin-bottom: 1.5rem;
-  }
-
-  .release-note {
-    margin-top: 2rem;
-  }
-}
-
-/* Mobile landscape & small tablets (below 768px) */
-@media (max-width: 767.98px) {
-  .site-footer {
-    padding: 1.75rem 0;
-  }
-
-  .site-footer__copyright,
+.site-footer__copyright,
   .site-footer__links a {
     font-size: 0.65rem;
     letter-spacing: 0.1em;
     text-align: center;
   }
-}
 
 .trailer-section {
   position: relative;
@@ -729,3 +674,69 @@ h6,
   object-fit: cover;
 }
 
+/* Media Queries */
+
+/* Tablet & small laptops (below 992px) */
+@media (max-width: 991.98px) {
+  .film-details {
+    padding: 4.5rem 0;
+  }
+
+  .film-poster {
+    max-width: 32rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .details-eyebrow {
+    margin-bottom: 1.5rem;
+  }
+
+  .release-note {
+    margin-top: 2rem;
+  }
+}
+
+/* Mobile landscape & small tablets (below 768px) */
+@media (max-width: 767.98px) {
+  .site-footer {
+    padding: 1.75rem 0;
+  }
+}
+
+/* Mobile portrait (below 576px) */
+@media (max-width: 575.98px) {
+  .cloud-navbar .navbar-brand {
+    font-size: 0.95rem;
+    letter-spacing: 0.14em;
+  }
+
+  .cloud-navbar .nav-link {
+    font-size: 0.8rem;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(2rem, 6.8vw, 2.2rem);
+    letter-spacing: 0.16em;
+    margin-right: -0.16em;
+  }
+
+  .hero-content p {
+    font-size: 0.7rem;
+    letter-spacing: 0.14em;
+  }
+
+  .cloud-navbar .navbar-nav {
+    gap: 1rem;
+  }
+
+  .trailer-banner {
+    min-height: 60vh;
+  }
+
+  .trailer-label {
+    max-width: 90vw;
+    font-size: 0.65rem;
+    letter-spacing: 0.18em;
+  }
+}
