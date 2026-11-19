@@ -756,4 +756,23 @@ h6,
     font-size: 0.65rem;
     letter-spacing: 0.18em;
   }
+
+  .cinematic-banner {
+    align-items: flex-start;
+    padding-top: 3.5rem;
+  }
+
+  .cinematic-banner .container {
+    justify-content: center;
+  }
+
+  .cinematic-banner h2 {
+    width: 100%;
+    font-size: 2rem;
+    letter-spacing: 0.18em;
+    padding-top: 6rem;
+    padding-left: 0.18em;
+    text-align: center;
+  }
+
 }
