@@ -751,6 +751,10 @@ h6,
     padding-left: 0.18em;
     text-align: center;
   }
+
+  .trailer-section {
+    padding: 4.5rem 0;
+  }
   }
 
 /* Mobile portrait (below 576px) */
