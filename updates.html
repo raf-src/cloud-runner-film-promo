@@ -85,7 +85,9 @@
 
     <main id="signup-form" class="updates-main">
       <div class="updates-form-wrapper">
-        <form id="updatesForm" class="updates-form">
+        <form id="updatesForm" class="updates-form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="0a85c82b-e0e3-45fc-992a-cdb7200b8998">
+          <input type="hidden" name="subject" value="New Cloud Runner Updates Form Submission"/>
           <div class="mb-4">
             <label for="firstName">First Name</label>
             <input id="firstName" name="firstName" type="text" required />
@@ -102,10 +104,10 @@
           </div>
 
           <div class="mb-4">
-            <label for="emailAddress">Email Address</label>
+            <label for="email">Email Address</label>
             <input
-              id="emailAddress"
-              name="emailAddress"
+              id="email"
+              name="email"
               type="email"
               required
             />
@@ -233,19 +235,6 @@
               and Cookies Policy includes further details on how your data is
               used and stored and on how to exercise these rights.
             </p>
-
-            <!-- <label class="updates-checkbox">
-              <input
-                type="checkbox"
-                name="preferences"
-                value="Behind-the-Scenes World Lore"
-              />
-              <span
-                >You can unsubscribe from transmissions at any time. Our Privacy
-                and Cookies Policy includes further details on how your data is
-                used and stored and on how to exercise these rights.</span
-              >
-            </label> -->
           </fieldset>
 
           <div class="text-center">
@@ -294,16 +283,5 @@
         </nav>
       </div>
     </footer>
-
-    <script>
-      document
-        .getElementById("updatesForm")
-        .addEventListener("submit", (event) => {
-          event.preventDefault();
-          document.getElementById("confirmationMessage").hidden = false;
-          event.currentTarget.reset();
-        });
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
