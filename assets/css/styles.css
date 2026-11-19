@@ -695,7 +695,7 @@ h6,
 
 .trailer-section {
   position: relative;
-  padding: clamp(3rem, 8vw, 6rem) 0;
+  padding: clamp(2rem, 5vw, 4rem) 0;
   overflow: hidden;
   background-image: url("../images/cloud-runner-background-image-trailer-section-index-page.jpg");
   background-position: center;
@@ -703,9 +703,10 @@ h6,
   background-repeat: no-repeat;
 }
 
-.trailer-section__container {
-  width: min(100% - 2rem, 960px);
-  max-width: 960px;
+.trailer-section_container {
+  width: min(100% - 2rem, 1280px);
+  max-width: 1280px;
+  margin-inline: auto;
 }
 
 .trailer-section .ratio {
