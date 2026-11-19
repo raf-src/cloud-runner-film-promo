@@ -775,4 +775,8 @@ h6,
     text-align: center;
   }
 
+  .film-details {
+    padding: 2.5rem 0;
+  }
+
 }
