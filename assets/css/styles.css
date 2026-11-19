@@ -712,6 +712,21 @@ h6,
   .release-note {
     margin-top: 2rem;
   }
+
+  .film-credits {
+    text-align: center;
+  }
+
+  .credits-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .release-note {
+    text-align: center;
+  }
 }
 
 /* Mobile landscape & small tablets (below 768px) */
@@ -719,7 +734,24 @@ h6,
   .site-footer {
     padding: 1.75rem 0;
   }
-}
+
+  .cinematic-banner {
+    align-items: flex-start;
+    padding-top: 7.5rem;
+  }
+
+  .cinematic-banner .container {
+    justify-content: center;
+  }
+
+  .cinematic-banner h2 {
+    width: 100%;
+    font-size: 2rem;
+    letter-spacing: 0.18em;
+    padding-left: 0.18em;
+    text-align: center;
+  }
+  }
 
 /* Mobile portrait (below 576px) */
 @media (max-width: 575.98px) {
