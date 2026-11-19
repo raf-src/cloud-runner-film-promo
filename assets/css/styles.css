@@ -757,6 +757,12 @@ h6,
   .trailer-section {
     padding: 4.5rem 0;
   }
+  .hero-content p {
+    font-size: 0.95rem;
+    font-weight: 650;
+    letter-spacing: 0.28em;
+    opacity: 0.9;
+  }
   }
 
 /* Mobile portrait (below 576px) */
