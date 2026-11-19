@@ -440,7 +440,13 @@ h6,
   margin-top: 0.8rem;
   margin-bottom: 0;
   color: #f0f0ec;
-  font-size: 0.72rem;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+.updates-checkbox > span {
+  font-size: 0.85rem;
   line-height: 1.5;
   letter-spacing: 0.04em;
 }
