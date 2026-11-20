@@ -356,7 +356,7 @@ h6,
 .updates-form label,
 .updates-form legend {
   display: block;
-  margin-bottom: 0.90rem;
+  margin-bottom: 0.9rem;
   color: rgba(240, 240, 236, 0.72);
   font-size: 1rem;
   font-weight: 400;
@@ -690,88 +690,6 @@ h6,
   white-space: nowrap;
 }
 
-@media (max-width: 767.98px) {
-  .site-footer__inner {
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-  }
-
-  .site-footer__nav,
-  .site-footer__social {
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  .site-footer__left {
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    text-align: center;
-  }
-
-  .site-footer__nav {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}
-
-.trailer-section {
-  position: relative;
-  padding: clamp(2rem, 5vw, 4rem) 0;
-  overflow: hidden;
-  background-image: url("../images/cloud-runner-background-image-trailer-section-index-page.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.trailer-section_container {
-  width: min(100% - 2rem, 1280px);
-  max-width: 1280px;
-  margin-inline: auto;
-}
-
-.trailer-section .ratio {
-  overflow: hidden;
-  background-color: #101214;
-}
-
-.trailer-section video {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border: 1px solid rgba(255, 255, 255, 0.35);
-  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.85);
-}
-
-.updates-hero {
-    min-height: 100svh;
-    height: auto;
-    background-size: cover;
-    background-position: center;
-    padding-inline: 1.25rem;
-  }
-
-  .updates-hero .hero-content {
-    width: 100%;
-    padding-inline: 1.5rem;
-  }
-
-  .updates-hero .hero-content h1 {
-    font-size: 1.45rem;
-    letter-spacing: 0.14em;
-    line-height: 1.3;
-  }
- 
-
-  .updates-hero .hero-content p {
-    font-size: 0.9375rem;
-    max-width: 22rem;
-    margin-inline: auto;
-  }
-
 /* Media Queries */
 
 /* Tablet & small laptops (below 992px) */
@@ -842,6 +760,80 @@ h6,
     letter-spacing: 0.28em;
     opacity: 0.9;
   }
+
+  .site-footer__inner {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .site-footer__nav,
+  .site-footer__social {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .site-footer__left {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .updates-hero {
+    min-height: 100svh;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    padding-inline: 1.25rem;
+  }
+
+  .updates-hero .hero-content {
+    width: 100%;
+    padding-inline: 1.5rem;
+  }
+
+  .updates-hero .hero-content h1 {
+    font-size: 1.45rem;
+    letter-spacing: 0.14em;
+    line-height: 1.3;
+  }
+
+  .updates-hero .hero-content p {
+    font-size: 0.9375rem;
+    max-width: 22rem;
+    margin-inline: auto;
+  }
+}
+
+.trailer-section {
+  position: relative;
+  padding: clamp(2rem, 5vw, 4rem) 0;
+  overflow: hidden;
+  background-image: url("../images/cloud-runner-background-image-trailer-section-index-page.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.trailer-section_container {
+  width: min(100% - 2rem, 1280px);
+  max-width: 1280px;
+  margin-inline: auto;
+}
+
+.trailer-section .ratio {
+  overflow: hidden;
+  background-color: #101214;
+}
+
+.trailer-section video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.85);
 }
 
 /* Mobile portrait (below 576px) */
