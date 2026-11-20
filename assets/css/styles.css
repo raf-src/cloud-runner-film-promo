@@ -738,6 +738,34 @@ h6,
   .release-note {
     text-align: center;
   }
+
+  .gallery-carousel-container {
+    width: 100%;
+    padding-inline: 1rem;
+  }
+
+  .gallery-carousel .carousel-inner,
+  .gallery-carousel .carousel-item,
+  .gallery-carousel .carousel-item img {
+    height: auto;
+  }
+
+  .gallery-carousel .carousel-item img {
+    aspect-ratio: 16 / 10;
+  }
+
+  .gallery-carousel .carousel-control-prev,
+  .gallery-carousel .carousel-control-next {
+    width: 3.25rem;
+  }
+
+  .gallery-carousel .carousel-control-prev {
+    left: 0;
+  }
+
+  .gallery-carousel .carousel-control-next {
+    right: 0;
+  }
 }
 
 /* Mobile landscape & small tablets (below 768px) */
@@ -919,4 +947,73 @@ h6,
 .game-hero .hero-content .btn:hover,
 .game-hero .hero-content .btn:focus-visible {
   color: #2f7f95;
+}
+
+.gallery-carousel-container {
+  width: min(1200px, 78vw);
+  margin-inline: auto;
+  padding-inline: 0;
+}
+
+.gallery-carousel .carousel-inner,
+.gallery-carousel .carousel-item,
+.gallery-carousel .carousel-item img {
+  width: 100%;
+  height: min(75vh, 750px);
+}
+
+.gallery-carousel .carousel-item img {
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+.gallery-carousel .carousel-control-prev,
+.gallery-carousel .carousel-control-next {
+  top: 0;
+  bottom: 0;
+  width: 4.5rem;
+  opacity: 1;
+}
+
+.gallery-carousel .carousel-control-prev {
+  left: -5.25rem;
+}
+
+.gallery-carousel .carousel-control-next {
+  right: -5.25rem;
+}
+
+.gallery-carousel__indicators {
+  position: static;
+  margin: 1.25rem 0 0;
+  gap: 0.55rem;
+}
+
+.gallery-carousel__indicators [data-bs-target] {
+  width: 8px;
+  height: 8px;
+  margin: 0;
+  border: 0;
+  border-radius: 50%;
+  background-color: rgba(240, 240, 236, 0.42);
+  text-indent: -9999px;
+}
+
+.gallery-carousel__indicators .active {
+  background-color: #f0f0ec;
+}
+
+@media (max-width: 991.98px) {
+  .gallery-carousel .carousel-control-prev,
+  .gallery-carousel .carousel-control-next {
+    width: 3.25rem;
+  }
+
+  .gallery-carousel .carousel-control-prev {
+    left: 0;
+  }
+
+  .gallery-carousel .carousel-control-next {
+    right: 0;
+  }
 }
