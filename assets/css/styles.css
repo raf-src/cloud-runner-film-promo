@@ -628,7 +628,7 @@ h6,
 .site-footer__nav a,
 .site-footer__social a {
   color: rgba(240, 240, 236, 0.62);
-  font-size: 0.65rem;
+  font-size: 0.75rem;
   font-weight: 400;
   line-height: 1.4;
   letter-spacing: 0.1em;
@@ -643,7 +643,7 @@ h6,
 .site-footer__social {
   display: flex;
   align-items: center;
-  gap: 1.25rem;
+  gap: 1.5rem;
 }
 
 .site-footer__nav a,
@@ -665,6 +665,22 @@ h6,
   outline-offset: 4px;
 }
 
+.site-footer__left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: nowrap;
+}
+
+.site-footer__nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.25rem;
+  white-space: nowrap;
+}
+
 @media (max-width: 767.98px) {
   .site-footer__inner {
     flex-direction: column;
@@ -676,6 +692,18 @@ h6,
   .site-footer__social {
     justify-content: center;
     flex-wrap: wrap;
+  }
+
+  .site-footer__left {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .site-footer__nav {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
@@ -838,4 +866,8 @@ h6,
   .film-details {
     padding: 2.5rem 0;
   }
+}
+
+.site-footer__social i {
+  font-size: 1.75rem;
 }
