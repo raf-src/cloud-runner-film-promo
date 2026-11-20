@@ -1116,13 +1116,3 @@ h6,
   font-size: clamp(0.9rem, 1.2vw, 1.05rem);
   line-height: 1.6;
 }
-
-.gallery-site-footer {
-  padding: 1.25rem 0;
-}
-
-@media (max-width: 767.98px) {
-  .gallery-site-footer {
-    padding: 1rem 0;
-  }
-}
