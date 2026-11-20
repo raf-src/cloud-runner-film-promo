@@ -910,3 +910,13 @@ h6,
 .site-footer__social i {
   font-size: 1.5rem;
 }
+
+.game-hero .hero-content h1,
+.game-hero .hero-content .btn {
+  color: #2f7f95;
+}
+
+.game-hero .hero-content .btn:hover,
+.game-hero .hero-content .btn:focus-visible {
+  color: #2f7f95;
+}
