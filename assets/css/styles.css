@@ -554,7 +554,7 @@ h6,
 
 .hero-content .btn {
   padding: 0.85rem 1.75rem;
-  border-width: 1px solid rgba(240, 240, 236, 0.3);
+  border: 1px solid rgba(240, 240, 236, 0.3);
   border-radius: 0;
   background-color: rgba(16, 20, 22, 0.4);
   backdrop-filter: blur(8px);
