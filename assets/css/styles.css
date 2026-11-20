@@ -411,6 +411,15 @@ h6,
   text-transform: none !important;
 }
 
+.updates-checkbox--consent {
+  align-items: flex-start !important;
+}
+
+.updates-checkbox--consent input[type="checkbox"] {
+  margin-top: 0.25rem;
+  flex-shrink: 0;
+}
+
 .updates-checkbox input {
   accent-color: #f0f0ec;
 }
