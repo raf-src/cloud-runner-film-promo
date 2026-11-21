@@ -864,6 +864,8 @@ h6,
     height: auto;
     aspect-ratio: auto;
     object-fit: contain;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.85);
   }
 
   .gallery-carousel .carousel-inner,
@@ -1025,8 +1027,6 @@ h6,
   display: block;
   width: 100%;
   height: auto;
-  min-height: 75vh;
-  max-height: 85vh;
   object-fit: contain;
   object-position: center;
 }
@@ -1050,7 +1050,7 @@ h6,
 .gallery-carousel__indicators {
   position: static;
   justify-content: center;
-  margin: 1.25rem 0 0;
+  margin: 1.5rem 0 0;
   gap: 0.55rem;
 }
 
@@ -1153,5 +1153,16 @@ h6,
   color: #f0f0ec;
   font-size: clamp(0.9rem, 1.2vw, 1.05rem);
   line-height: 1.6;
+}
+
+.gallery-carousel {
+  border: 0;
+  box-shadow: none;
+}
+
+.gallery-carousel .carousel-inner {
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.85);
 }
 
