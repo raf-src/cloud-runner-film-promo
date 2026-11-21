@@ -132,3 +132,26 @@ The *Cloud Runner* promotional website is deployed and hosted using **GitHub Pag
 ### Updating the Live Site
 
 Because the project uses static HTML5, CSS3, Bootstrap 5, and vanilla JavaScript with relative asset paths (`assets/...`), pushing new commits to `main` automatically triggers a GitHub Pages rebuild so updates go live without extra server configuration.
+
+## Credits
+
+### Concept, Story & Development
+
+* **Original Concept & World-Building:** Created for *Cloud Runner*, including the setting, character dynamics, and promotional site copy.
+* **Web Development & Design Implementation:** Built with HTML5, CSS3, Bootstrap 5, and JavaScript, with styling refinements and accessibility contrast updates developed in VS Code.
+
+### Media & Visual Assets
+
+* **AI Video & Imagery:** Generated with **Google Flow** and refined/composited in **Adobe Illustrator** and **Adobe Photoshop** (including WebP optimization for web performance and the custom color palette swatch).
+* **Audio & Score Preview:** Generated with **Flow Music** for the *Cloud Runner* teaser/trailer experience.
+
+### Frameworks, Libraries & Acknowledgments
+
+* **Bootstrap 5, Font Awesome & Google Fonts:** Used for responsive layout structure, icons, and `Inter` typography.
+* **Mentorship & Feedback:** Thanks to bootcamp tutors and peers at WAES and Code Institute for guidance, feedback, and code walkthroughs during development.
+
+## Concept Ownership & Copyright
+
+* **Original Concept & IP:** *Cloud Runner*—including its premise, floating-island world-building, and characters (including the five teenage scavengers led by **Rowan Cole**, his younger brother **Toby Cole**, their adopted brother **Jules Mercer** and the 'Gemini' twin brothers **Marek Hale** and **Kieran Hale**, alongside **Silver Vane** and **Caspian Vane**), narrative copy, and promotional website implementation—is an original concept created by **Raf Joseph (`raf-src`)**.
+* **Copyright Notice:** © 2026 Raf Joseph. All rights reserved. Original written narrative, character descriptions, site copy, and custom code in this repository may not be reproduced, redistributed, or adapted into derivative works without permission.
+* **Third-Party & Generated Assets:** AI-assisted visuals and audio generated via Google Flow / Flow Music remain subject to their respective tool terms, while Bootstrap 5, Font Awesome, and Google Fonts remain under their respective licenses.
