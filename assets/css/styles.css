@@ -910,11 +910,6 @@ h6,
     letter-spacing: 0.14em;
   }
 
-  .gallery-carousel-tag {
-    font-size: 0.3rem;
-    padding: 0.35rem 0.55rem;
-  }
-
   .cloud-navbar .nav-link {
     font-size: 0.8rem;
   }
@@ -966,12 +961,17 @@ h6,
     padding: 2.5rem 0;
   }
 
+  .gallery-carousel-tag {
+    font-size: 1.25rem;
+    padding: 0.35rem 0.55rem;
+  }
+
   .gallery-carousel-editorial h3 {
-    font-size: 0.75rem;
+    font-size: 1.25rem;
   }
 
   .gallery-carousel-editorial p {
-    font-size: 0.5rem;
+    font-size: 0.875rem;
   }
 }
 
@@ -1112,6 +1112,19 @@ h6,
   text-transform: uppercase;
 }
 
+.gallery-mobile-tag {
+  font-size: 0.80rem;
+}
+
+.gallery-mobile-list h3 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.gallery-mobile-list p {
+  font-size: 0.95rem;
+}
+
 .gallery-carousel-editorial h3 {
   margin: 0 0 0.9rem;
   color: #f0f0ec;
@@ -1130,6 +1143,3 @@ h6,
   line-height: 1.6;
 }
 
-@media (max-width: 575.98px) {
-  
-}
