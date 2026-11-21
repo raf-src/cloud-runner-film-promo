@@ -49,3 +49,26 @@ A promotional website for the original dystopian sci-fi film *Cloud Runner*
      * Scene Gallery: A horizontal scrolling card carousel utilizing CSS scroll-snap and flexbox layout with forward and previous navigation arrows to browse film stills.
      * Character Portraits Gallery: A separate horizontal image gallery showcasing key character visuals and lore cards.
      * Fully responsive design ensuring smooth touch-scrolling and clean alignment on mobile and desktop viewports.
+
+## Design
+
+### Color Scheme
+
+The visual palette for *Cloud Runner* pairs deep atmospheric charcoal-slate backgrounds with crisp off-white typography and a cool teal-blue interactive accent[cite: 13]:
+
+| Hex Value | Role & Usage |
+| :--- | :--- |
+| `#101416` | Primary page/body background (`body`), gallery header background (`.gallery-navbar-header`), and hero CTA hover text (`.hero-content .btn:hover`)[cite: 13] |
+| `#101214` | Form inputs and select menus (`.updates-form input`, `.updates-form select`), gallery cards (`.gallery-card`), and trailer container background (`.trailer-section .ratio`)[cite: 13] |
+| `#181b1f` | Film details/synopsis section background (`.film-details`) and updates page main container (`.updates-main`)[cite: 13] |
+| `#080c0e` | Site footer background (`.site-footer`)[cite: 13] |
+| `#f0f0ec` | Primary off-white text and borders across the hero, synopsis, cast/crew credits, forms, gallery, carousel, footer, and confirmation views[cite: 13] |
+| `#ffffff` | Pure white hover, focus, and active states for navigation links (`.cloud-nav-link`), brand text (`.cloud-home`), and cinematic banner headings[cite: 13] |
+| `#82bdca` | Atmospheric teal-blue accent for the game page heading and CTA (`.game-hero`), plus default, hover, focus, and mobile collapsed navigation link states[cite: 13] |
+
+* **Overlays & Contrast:** Translucent dark gradient overlays derived from the base dark palette sit behind hero banners, carousel frames, and video sections so light typography (`#f0f0ec` / `#ffffff`) remains legible across desktop and mobile viewports.
+
+### Typography
+
+* **Primary Font (`Inter`):** Imported via Google Fonts and applied consistently across body copy, navigation, synopses, credits, cards, and form controls, paired with clean system sans-serif fallbacks (`sans-serif`) so text renders immediately without layout shift.
+* **Display & Editorial Hierarchy:** Headings, theatrical release banners, and interactive CTAs use uppercase styling, deliberate font weights, and wide letter-spacing (`letter-spacing`) to create a sharp cinematic title-card aesthetic without relying on heavy external display font files.
