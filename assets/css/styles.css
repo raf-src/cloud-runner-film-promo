@@ -346,7 +346,7 @@ h6,
   min-height: 100svh;
   background-image: url("../images/cloud-runner-hero-image-updates-page.webp");
   background-position: center;
-  background-size: 118% auto;
+  background-size: 115% auto;
   background-repeat: no-repeat;
 }
 
@@ -498,12 +498,20 @@ h6,
 .gallery-hero {
   height: 60vh;
   min-height: 60vh;
+  overflow: hidden;
   background-image:
     linear-gradient(rgba(16, 18, 20, 0.22), rgba(16, 18, 20, 0.22)),
     url("../images/cloud-runner-hero-image-gallery-page.webp");
-  background-position: center bottom 5%;
+  background-position: center 87%;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+@media (max-width: 767.98px) {
+  .gallery-hero {
+    background-position: center 28%;
+    background-size: cover;
+  }
 }
 
 .gallery-scroll-track {
@@ -898,11 +906,15 @@ h6,
   .gallery-mobile-list img {
     display: block;
     width: 100%;
-    height: auto;
-    aspect-ratio: auto;
-    object-fit: contain;
-    border: 1px solid rgba(255, 255, 255, 0.35);
-    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.85);
+    height: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    object-position: center;
+    transform: scale(1.35);
+    transform-origin: center;
+    border: 0;
+    box-shadow: none;
+    overflow: hidden;
   }
 
   .gallery-carousel .carousel-inner,
@@ -1054,18 +1066,22 @@ h6,
 
 .gallery-carousel .carousel-inner,
 .gallery-carousel .carousel-item {
-  width: 100%;
-  height: auto;
-  min-height: 0;
-  max-height: none;
+  overflow: hidden;
+}
+
+.gallery-carousel .carousel-item {
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
 }
 
 .gallery-carousel .carousel-item img {
   display: block;
   width: 100%;
-  height: auto;
-  object-fit: contain;
+  height: 100%;
+  object-fit: cover;
   object-position: center;
+  transform: scale(1.25);
+  transform-origin: center;
 }
 
 .gallery-carousel .carousel-control-prev,
@@ -1172,6 +1188,7 @@ h6,
 .gallery-mobile-list article {
   width: 100%;
   margin-bottom: 2.25rem;
+  overflow: hidden;
 }
 
 .gallery-carousel-editorial h3 {
