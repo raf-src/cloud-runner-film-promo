@@ -92,3 +92,27 @@ The visual palette for *Cloud Runner* pairs deep atmospheric charcoal-slate back
 * **Game Teaser Page (`game.html`):**
   * **Interactive Experience Preview:** Dedicated promotional preview page featuring full-bleed background video, `#82bdca` teal-blue accent styling, and teaser copy introducing the *Cloud Runner* companion experience.
 * **Site Footer (`.site-footer`):** Consistent dark footer (`#080c0e`) across all pages with copyright details, studio/production credits, and social media links.
+
+## Technologies & Tools Used
+
+### Languages
+
+* **HTML5:** Semantic structure and content across all project pages.
+* **CSS3:** Custom styling, responsive layouts, Flexbox, CSS Grid, variables, and media queries.
+* **JavaScript (ES6):** Client-side form validation logic on the updates page.
+
+### Frameworks & Libraries
+
+* **Bootstrap 5:** Rapid responsive grid system, utility classes, navigation components, and modal/carousel framework.
+* **Google Fonts:** Sourcing and implementation of the project typography (`Inter` with `sans-serif` fallback).
+* **Font Awesome:** Scalable vector icons used in navigation links, buttons, and the footer.
+
+### Programs & Services
+
+* **VS Code:** Primary Integrated Development Environment (IDE) for writing code.
+* **Git:** Version control system used to track changes and commit code.
+* **GitHub:** Cloud-based hosting platform for Git repositories, issue tracking, and project management.
+* **GitHub Pages:** Hosting service used to deploy the live version of the website.
+* **Google Flow AI:** Used for generating background video and teaser audio assets.
+* **Google Chrome DevTools:** Browser-based suite used extensively for debugging, testing responsiveness, and Lighthouse auditing.
+* **W3C Markup Validation Service & CSS Validation Service:** Used for validating HTML and CSS code quality and compliance.
