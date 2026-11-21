@@ -116,3 +116,19 @@ The visual palette for *Cloud Runner* pairs deep atmospheric charcoal-slate back
 * **Google Flow AI:** Used for generating background video and teaser audio assets.
 * **Google Chrome DevTools:** Browser-based suite used extensively for debugging, testing responsiveness, and Lighthouse auditing.
 * **W3C Markup Validation Service & CSS Validation Service:** Used for validating HTML and CSS code quality and compliance.
+
+## Deployment
+
+The *Cloud Runner* promotional website is deployed and hosted using **GitHub Pages** directly from the `main` branch of the GitHub repository.
+
+### Deploying to GitHub Pages
+
+1. Push all committed project files (`index.html`, `gallery.html`, `updates.html`, `thank-you.html`, `game.html`, `assets/`, and `README.md`) to the `main` branch on GitHub (`https://github.com/raf-src/cloud-runner-film-promo`).
+2. Open the repository on **GitHub** and navigate to **Settings** > **Pages** (under the *Code and automation* section).
+3. Under **Build and deployment** > **Source**, select **Deploy from a branch**.
+4. Set **Branch** to **`main`** and the folder to **`/ (root)`**, then click **Save**.
+5. Wait a minute or two for GitHub Actions / Pages to build and publish the site; the live URL will appear on the **Pages** settings screen (`https://raf-src.github.io/cloud-runner-film-promo/`).
+
+### Updating the Live Site
+
+Because the project uses static HTML5, CSS3, Bootstrap 5, and vanilla JavaScript with relative asset paths (`assets/...`), pushing new commits to `main` automatically triggers a GitHub Pages rebuild so updates go live without extra server configuration.
