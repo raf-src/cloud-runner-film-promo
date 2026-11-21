@@ -68,12 +68,12 @@ h6,
 .cloud-nav-link.cloud-nav-link--game:hover,
 .cloud-nav-link.cloud-nav-link--game:focus-visible,
 .cloud-nav-link.cloud-nav-link--game.active {
-  color: #6faabd !important;
+  color: #82bdca !important;
 }
 
 .cloud-nav-link.cloud-nav-link--game:hover,
 .cloud-nav-link.cloud-nav-link--game:focus-visible {
-  color: #6faabd !important;
+  color: #82bdca !important;
 }
 
 .cloud-home {
@@ -148,7 +148,6 @@ h6,
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transform: scale(1.22);
   z-index: 0;
 }
 
@@ -902,6 +901,7 @@ h6,
 
   .gallery-mobile-list article {
     width: 100%;
+    color: #f0f0ec;
   }
 
   .gallery-mobile-list img {
@@ -1033,12 +1033,12 @@ h6,
 
 .game-hero .hero-content h1,
 .game-hero .hero-content .btn {
-  color: #2f7f95;
+  color: #82bdca;
 }
 
 .game-hero .hero-content .btn:hover,
 .game-hero .hero-content .btn:focus-visible {
-  color: #2f7f95;
+  color: #82bdca;
 }
 
 .gallery-navbar-header {
@@ -1190,6 +1190,7 @@ h6,
   width: 100%;
   margin-bottom: 2.25rem;
   overflow: hidden;
+  color: #f0f0ec;
 }
 
 .gallery-carousel-editorial h3 {
@@ -1219,5 +1220,19 @@ h6,
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.35);
   box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.85);
+}
+
+@media (max-width: 767.98px) {
+  .cloud-navbar .navbar-collapse.show,
+  .cloud-navbar .navbar-collapse.collapsing {
+    background: rgba(8, 12, 14, 0.92);
+  }
+
+  .cloud-navbar .navbar-collapse.show .cloud-nav-link.cloud-nav-link--game,
+  .cloud-navbar .navbar-collapse.show .cloud-nav-link.cloud-nav-link--game:hover,
+  .cloud-navbar .navbar-collapse.show .cloud-nav-link.cloud-nav-link--game:focus-visible,
+  .cloud-navbar .navbar-collapse.show .cloud-nav-link.cloud-nav-link--game.active {
+    color: #82bdca !important;
+  }
 }
 
