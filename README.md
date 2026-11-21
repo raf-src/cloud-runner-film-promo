@@ -4,7 +4,7 @@ A promotional website for the original dystopian sci-fi film *Cloud Runner*
 
 "In a world of floating industrial cities, five teenage tech-scavengers known as the Cloud Runners race to reach a legendary generator city to restore power to their region—hunted across the skies by Caspian, ruthless heir to the White City, a colossal spaceship city that roams the regions siphoning energy from powerless floating islands, until his peacekeeping sister, Silver, teams up with the crew's young leader to try and stop him and bring unity between their worlds."
 
-### User Stories
+## User Stories
 
 1. **Cinematic Hero Header (#1)**
    * *User Story:* As a site visitor, I want a full-viewport cinematic hero header when I land on the page, so that I am immediately immersed in the dystopian atmosphere of *Cloud Runner* and can access key calls to action.
@@ -72,3 +72,23 @@ The visual palette for *Cloud Runner* pairs deep atmospheric charcoal-slate back
 
 * **Primary Font (`Inter`):** Imported via Google Fonts and applied consistently across body copy, navigation, synopses, credits, cards, and form controls, paired with clean system sans-serif fallbacks (`sans-serif`) so text renders immediately without layout shift.
 * **Display & Editorial Hierarchy:** Headings, theatrical release banners, and interactive CTAs use uppercase styling, deliberate font weights, and wide letter-spacing (`letter-spacing`) to create a sharp cinematic title-card aesthetic without relying on heavy external display font files.
+
+## Features
+
+### Existing Features
+
+* **Responsive Navigation Bar (`.cloud-navbar`):** Fixed/transparent header on hero pages and solid dark header on subpages featuring the *Cloud Runner* brand link, accessible active-page indicators (`aria-current="page"`), high-contrast hover/focus states, and a collapsible mobile menu with a custom dark backdrop (`max-width: 767.98px`) for clear legibility over video and imagery.
+* **Home Page (`index.html`):**
+  * **Full-Viewport Hero Section:** Autoplaying, muted, looping atmospheric background video paired with dark gradient overlays, the film title, release window (*In Cinemas Fall 2027*), and primary call-to-action buttons (*Watch Teaser* / *Explore Gallery*).
+  * **Film Details, Poster & Credits Grid:** Three-column responsive layout presenting the official *Cloud Runner* theatrical poster, official synopsis, cast and crew billing (directed by Henrik Lindqvist, starring Callum Reid, Noah Gallagher, Darius Okafor, Leo Castellanos, Tomasz Novak, and Julian Thorne), and release metadata.
+  * **Cinematic Teaser & Trailer Showcase:** Full-bleed atmospheric banner and responsive 16:9 trailer section (`ratio-16x9`) featuring custom preview video and score audio.
+* **Character & World Gallery (`gallery.html`):**
+  * **Gallery Hero Banner:** Full-width visual header introducing the divided world of the floating islands and the upper capital.
+  * **Interactive Character Showcase:** Responsive desktop carousel with custom slide indicators and controls paired with a dedicated mobile vertical card layout (`.gallery-mobile-list`), profiling the five Cloud Runners, Caspian Vane, and Silver using optimized WebP portraits.
+* **Early-Access Updates Sign-Up (`updates.html`):**
+  * **Interactive Subscription Form:** Clean dark-themed form collecting visitor name, email address, preferred sector/region, and genre/interest selection, using native HTML5 validation alongside custom validation feedback to prevent incomplete submissions before redirecting to the confirmation view.
+* **Subscription Confirmation (`thank-you.html`):**
+  * **Dedicated Confirmation State:** Atmospheric confirmation screen acknowledging early-access registration and providing a direct return path to the main site.
+* **Game Teaser Page (`game.html`):**
+  * **Interactive Experience Preview:** Dedicated promotional preview page featuring full-bleed background video, `#82bdca` teal-blue accent styling, and teaser copy introducing the *Cloud Runner* companion experience.
+* **Site Footer (`.site-footer`):** Consistent dark footer (`#080c0e`) across all pages with copyright details, studio/production credits, and social media links.
