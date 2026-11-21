@@ -910,6 +910,11 @@ h6,
     letter-spacing: 0.14em;
   }
 
+  .gallery-carousel-tag {
+    font-size: 0.3rem;
+    padding: 0.35rem 0.55rem;
+  }
+
   .cloud-navbar .nav-link {
     font-size: 0.8rem;
   }
@@ -959,6 +964,14 @@ h6,
 
   .film-details {
     padding: 2.5rem 0;
+  }
+
+  .gallery-carousel-editorial h3 {
+    font-size: 0.75rem;
+  }
+
+  .gallery-carousel-editorial p {
+    font-size: 0.5rem;
   }
 }
 
@@ -1115,4 +1128,8 @@ h6,
   color: #f0f0ec;
   font-size: clamp(0.9rem, 1.2vw, 1.05rem);
   line-height: 1.6;
+}
+
+@media (max-width: 575.98px) {
+  
 }
