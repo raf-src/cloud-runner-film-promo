@@ -1113,16 +1113,28 @@ h6,
 }
 
 .gallery-mobile-tag {
-  font-size: 0.80rem;
+  display: inline-block;
+  font-size: 0.75rem;
+  margin-top: 0.85rem;
+  margin-bottom: 0.35rem;
 }
 
 .gallery-mobile-list h3 {
   font-size: 1.5rem;
   text-transform: uppercase;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
 }
 
 .gallery-mobile-list p {
   font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.gallery-mobile-list article {
+  width: 100%;
+  margin-bottom: 2.25rem;
 }
 
 .gallery-carousel-editorial h3 {
