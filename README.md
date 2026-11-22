@@ -120,6 +120,30 @@ The website is deployed via **GitHub Pages** from the `main` branch (`https://ra
 
 ## Validation
 
+### Desktop & Mobile Page Views
+
+Desktop and mobile captures across all five pages of the deployed site.
+
+- **Home (`index.html`)**
+  ![Home Desktop View](assets/doc-images/cloud-runner-page-index-desktop.png)
+  ![Home Mobile View](assets/doc-images/cloud-runner-page-index-mobile.png)
+
+- **Gallery (`gallery.html`)**
+  ![Gallery Desktop View](assets/doc-images/cloud-runner-page-gallery-desktop.png)
+  ![Gallery Mobile View](assets/doc-images/cloud-runner-page-gallery-mobile.png)
+
+- **Get Updates (`updates.html`)**
+  ![Get Updates Desktop View](assets/doc-images/cloud-runner-page-updates-desktop.png)
+  ![Get Updates Mobile View](assets/doc-images/cloud-runner-page-updates-mobile.png)
+
+- **Soundtrack (`music.html`)**
+  ![Soundtrack Desktop View](assets/doc-images/cloud-runner-page-music-desktop.png)
+  ![Soundtrack Mobile View](assets/doc-images/cloud-runner-page-music-mobile.png)
+
+- **Thank You (`thank-you.html`)**
+  ![Thank You Desktop View](assets/doc-images/cloud-runner-page-thank-you-desktop.png)
+  ![Thank You Mobile View](assets/doc-images/cloud-runner-page-thank-you-mobile.png)
+
 ### W3C HTML & CSS Validation
 
 Validated on `2026-11-22` via W3C Nu Html Checker and W3C CSS Checker—all five HTML pages and `assets/css/styles.css` passed with **0 errors and 0 warnings**.
@@ -157,31 +181,26 @@ Audited in Chrome DevTools (Incognito) against the live GitHub Pages site, compa
 *(Note: `game.html` was included in the `2026-11-20` baseline at 100 / 100 / 100 / 100 desktop and 97 / 100 / 100 / 100 mobile; `music.html` was audited in the `2026-11-22` pass.)*
 
 - **Home (`index.html`)**
-  
   ![Lighthouse Desktop — Home](assets/doc-images/cloud-runner-lighthouse-index-page-desktop-check.jpeg)
 
   ![Lighthouse Mobile — Home](assets/doc-images/cloud-runner-lighthouse-mobile-check.png)
 
 - **Gallery (`gallery.html`)**
-  
   ![Lighthouse Desktop — Gallery](assets/doc-images/cloud-runner-lighthouse-gallery-desktop-check.jpeg)
 
   ![Lighthouse Mobile — Gallery](assets/doc-images/cloud-runner-lighthouse-gallery-mobile-check.png)
 
 - **Get Updates (`updates.html`)**
-  
   ![Lighthouse Desktop — Get Updates](assets/doc-images/cloud-runner-lighthouse-updates-desktop-check.jpeg)
 
   ![Lighthouse Mobile — Get Updates](assets/doc-images/cloud-runner-lighthouse-updates-mobile-check.png)
 
 - **Soundtrack (`music.html`)**
-  
   ![Lighthouse Desktop — Soundtrack](assets/doc-images/cloud-runner-lighthouse-music-desktop-check.jpeg)
 
   ![Lighthouse Mobile — Soundtrack](assets/doc-images/cloud-runner-lighthouse-music-mobile-check.png)
 
 - **Thank You (`thank-you.html`)**
-  
   ![Lighthouse Desktop — Thank You](assets/doc-images/cloud-runner-lighthouse-thankyou-desktop-check.jpeg)
 
   ![Lighthouse Mobile — Thank You](assets/doc-images/cloud-runner-lighthouse-thankyou-mobile-check.png)
