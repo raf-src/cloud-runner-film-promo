@@ -25,28 +25,46 @@ A promotional website for the original dystopian sci-fi film *Cloud Runner*.
 *Cloud Runner* is a responsive multi-page promotional website built with HTML5, CSS3, and Bootstrap 5 for an original sci-fi film project. It introduces visitors to the story world, showcases key characters and visual teasers, highlights the soundtrack, and provides an updates sign-up flow.
 
 1. **Cinematic Hero Header (#1)**
-   - *User Story:* As a site visitor, I want a full-viewport cinematic hero header when I land on the page, so that I am immediately immersed in the dystopian atmosphere of *Cloud Runner* and can access key calls to action.
-   - *Acceptance Criteria:* Full-viewport hero section (`100vh`) with a muted background video loop, dark gradient overlay, centered title, logline, primary CTA, and top navigation.
+   - *User Story:* As a site visitor, I want a full-viewport hero header when I land on `index.html` so I am immediately immersed in the atmosphere of *Cloud Runner* and can access key calls to action.
+   - *Acceptance Criteria:*
+     - Full-viewport hero section (`100vh`) with a muted background video loop, dark gradient overlay, centered title, release window (*In Cinemas Fall 2027*), and primary call-to-action button.
+     - Top navigation bar positioned cleanly without blocking the hero focal point.
+   - *Tasks Completed:* Built the hero section in `index.html`, styled the overlay and responsive sizing in `assets/css/styles.css`, converted media assets to `.webp`, and verified performance with Lighthouse.
 
-2. **Film Details & Synopsis Grid (#2)**
-   - *User Story:* As a film enthusiast, I want to view the official movie poster alongside a clear synopsis and full cast/crew details, so that I can understand the plot and background of the film.
-   - *Acceptance Criteria:* Responsive Bootstrap grid displaying the movie poster, synopsis, and structured cast, director, screenplay, and production credits.
+2. **Film Details, Poster & Credits Grid (#2)**
+   - *User Story:* As a film enthusiast, I want to view the official movie poster alongside a clear synopsis and cast/crew credits on `index.html` so I understand the plot and production background.
+   - *Acceptance Criteria:*
+     - Responsive multi-column Bootstrap layout presenting the movie poster, story synopsis, and structured cast/crew credits.
+     - Text and images scale cleanly across desktop and mobile viewports.
+   - *Tasks Completed:* Structured the poster, synopsis, and cast/crew columns in `index.html`, refined spacing and typography in `assets/css/styles.css`, and checked desktop and mobile page captures.
 
-3. **Video Teaser & Media Banner (#3)**
-   - *User Story:* As an explorer of the site, I want to see a cinematic teaser video section directly below the synopsis, so that I can preview official footage and engage with the visual media.
-   - *Acceptance Criteria:* Full-width media banner and responsive 16:9 trailer video player below the film details.
+3. **Video Teaser & Media Showcase (#3)**
+   - *User Story:* As a visitor exploring `index.html`, I want a teaser video section so I can preview footage and engage with the visual media.
+   - *Acceptance Criteria:*
+     - Responsive 16:9 trailer section (`ratio-16x9`) and supporting media framing positioned below the film details.
+     - Controls and media render cleanly across screen sizes.
+   - *Tasks Completed:* Added and styled the responsive 16:9 trailer section in `index.html` and `assets/css/styles.css`, optimized assets, and validated markup and layout.
 
-4. **Responsive Multi-Page Navigation (#4)**
-   - *User Story:* As a user on any device (mobile or desktop), I want intuitive navigation across all pages (`index.html`, `gallery.html`, `updates.html`, `music.html`, and `thank-you.html`), so that I can browse the site quickly without layout breakage.
-   - *Acceptance Criteria:* Collapsible Bootstrap 5 mobile menu and working links across all pages.
+4. **Responsive Multi-Page Navigation & Footer (#4)**
+   - *User Story:* As a visitor on desktop or mobile, I want consistent navigation and footer links across `index.html`, `gallery.html`, `updates.html`, `music.html`, and `thank-you.html` so I can move smoothly around the site.
+   - *Acceptance Criteria:*
+     - Shared navigation bar (collapsing to a mobile menu button on smaller screens) and footer across all five pages.
+     - All internal links connect the five pages reliably without layout breakage.
+   - *Tasks Completed:* Standardized the navbar and `.site-footer` across all five pages, fixed W3C HTML/CSS validation issues, and verified desktop and mobile page views.
 
-5. **Early-Access Contact & Newsletter Form (#5)**
-   - *User Story:* As an engaged visitor, I want to submit my details via a clean sign-up form, so that I can receive release updates and alerts for *Cloud Runner*.
-   - *Acceptance Criteria:* Styled form inputs with HTML5 validation and redirect/confirmation feedback on `thank-you.html`.
+5. **Character & World Gallery (#5)**
+   - *User Story:* As a visitor exploring `gallery.html`, I want to browse the key characters and their roles across both desktop and mobile screens.
+   - *Acceptance Criteria:*
+     - Dedicated `gallery.html` page with a visual header and character profiles (Rowan Cole, Toby Cole, Kieran Hale, Marek Hale, Jules Mercer, Silver Vane, and Caspian Vane).
+     - Responsive layout that adapts cleanly from desktop to a stacked mobile view without horizontal overflow.
+   - *Tasks Completed:* Created the character profiles in `gallery.html`, added the desktop carousel and stacked mobile layout with `16 / 9` framing and font sizing in `assets/css/styles.css`, and converted portraits to `.webp`.
 
-6. **Immersive World & Character Gallery (#6)**
-   - *User Story:* As a site visitor exploring the *Cloud Runner* world page, I want a dedicated gallery view for characters and visuals, so that I can explore the lore cleanly across screen sizes.
-   - *Acceptance Criteria:* Dedicated `gallery.html` page with responsive desktop carousel and mobile card layout using optimized WebP imagery.
+6. **Soundtrack Preview, Updates Sign-Up & Confirmation (#6)**
+   - *User Story:* As an engaged fan, I want to explore the *"Skybound"* soundtrack on `music.html`, sign up for release updates on `updates.html`, and see confirmation on `thank-you.html`.
+   - *Acceptance Criteria:*
+     - Dedicated `music.html` page introducing *"Skybound"* with clear navigation/calls to action.
+     - Form on `updates.html` with name, contact, email, optional details, genre selection, and consent controls with validation, routing to `thank-you.html` upon submission.
+   - *Tasks Completed:* Built `music.html`, `updates.html`, and `thank-you.html`, updated hero viewport sizing (`100svh`, `min-height: 500px`, `background-size: cover`), and passed W3C and Lighthouse checks across all three pages.
 
 ## Features & User Benefits
 
@@ -84,7 +102,7 @@ The visual palette pairs deep slate and charcoal-slate backgrounds with off-whit
 
 ### Languages & Frameworks
 - **HTML5:** Semantic markup across all five pages.
-- **CSS3:** Custom styling, Flexbox, CSS Grid, variables, and responsive media queries.
+- **CSS3:** Custom styling, responsive layouts, Flexbox, CSS Grid, variables, and media queries.
 - **Bootstrap 5:** Responsive grid system, utility classes, navbar, and carousel/ratio components.
 - **Google Fonts (`Inter`) & Font Awesome:** Typography and scalable icons.
 
@@ -151,9 +169,9 @@ Validated on `2026-11-22` via W3C Nu Html Checker and W3C CSS Checker—all five
 - **Home (`index.html`)**
   ![W3C HTML Validation — Home](assets/doc-images/cloud-runner-index-page-W3C-HTML-CSS-validation-pass.png)
 - **Gallery (`gallery.html`)**
-  ![W3C HTML Validation — Gallery](assets/doc-images/cloud-runner-gallery-page-W3C-HTML-CSS-%20validation-pass.png)
+  ![W3C HTML Validation — Gallery](assets/doc-images/cloud-runner-gallery-page-W3C-HTML-CSS-validation-pass.png)
 - **Get Updates (`updates.html`)**
-  ![W3C HTML Validation — Get Updates](assets/doc-images/cloud-runner-updates-page-W3C-HTML-CSS%20validation-pass._2.png)
+  ![W3C HTML Validation — Get Updates](assets/doc-images/cloud-runner-updates-page-W3C-HTML-CSS-validation-pass.png)
 - **Soundtrack (`music.html`)**
   ![W3C HTML Validation — Soundtrack](assets/doc-images/cloud-runner-music-page-W3C-HTML-CSS-validation-pass.png)
 - **Thank You (`thank-you.html`)**
@@ -181,28 +199,33 @@ Audited in Chrome DevTools (Incognito) against the live GitHub Pages site, compa
 *(Note: `game.html` was included in the `2026-11-20` baseline at 100 / 100 / 100 / 100 desktop and 97 / 100 / 100 / 100 mobile; `music.html` was audited in the `2026-11-22` pass.)*
 
 - **Home (`index.html`)**
+  
   ![Lighthouse Desktop — Home](assets/doc-images/cloud-runner-lighthouse-index-page-desktop-check.jpeg)
 
   ![Lighthouse Mobile — Home](assets/doc-images/cloud-runner-lighthouse-mobile-check.png)
-
+  
 - **Gallery (`gallery.html`)**
+  
   ![Lighthouse Desktop — Gallery](assets/doc-images/cloud-runner-lighthouse-gallery-desktop-check.jpeg)
 
   ![Lighthouse Mobile — Gallery](assets/doc-images/cloud-runner-lighthouse-gallery-mobile-check.png)
-
+  
 - **Get Updates (`updates.html`)**
+  
   ![Lighthouse Desktop — Get Updates](assets/doc-images/cloud-runner-lighthouse-updates-desktop-check.jpeg)
-
+  
   ![Lighthouse Mobile — Get Updates](assets/doc-images/cloud-runner-lighthouse-updates-mobile-check.png)
-
+  
 - **Soundtrack (`music.html`)**
+  
   ![Lighthouse Desktop — Soundtrack](assets/doc-images/cloud-runner-lighthouse-music-desktop-check.jpeg)
-
+  
   ![Lighthouse Mobile — Soundtrack](assets/doc-images/cloud-runner-lighthouse-music-mobile-check.png)
-
+  
 - **Thank You (`thank-you.html`)**
+  
   ![Lighthouse Desktop — Thank You](assets/doc-images/cloud-runner-lighthouse-thankyou-desktop-check.jpeg)
-
+  
   ![Lighthouse Mobile — Thank You](assets/doc-images/cloud-runner-lighthouse-thankyou-mobile-check.png)
 
 ## Credits, Attribution & Ownership
