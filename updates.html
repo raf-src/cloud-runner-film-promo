@@ -344,6 +344,11 @@
       </div>
     </footer>
 
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+
     <script>
       const updatesForm = document.querySelector("#updatesForm");
       const genreBoxes = [
@@ -352,9 +357,7 @@
 
       function validateGenres() {
         const hasGenre = genreBoxes.some((box) => box.checked);
-        const message = hasGenre
-          ? ""
-          : "Please choose a minimum of one genre.";
+        const message = hasGenre ? "" : "Please choose a minimum of one genre.";
 
         genreBoxes.forEach((box) => {
           box.setCustomValidity(message);
