@@ -110,7 +110,6 @@ The visual palette pairs deep slate and charcoal-slate backgrounds with off-whit
 ### Tools & Services
 - **VS Code, Git, GitHub & GitHub Pages:** Editor, version control, repository hosting, and static deployment.
 - **Google Flow & Flow Music:** Visual teaser/character artwork and soundtrack generation.
-- **Adobe Illustrator & Adobe Photoshop:** Graphic design, visual polish, and WebP asset preparation.
 - **Google Chrome DevTools & W3C Validators:** Responsiveness testing, Lighthouse auditing, and HTML/CSS validation.
 
 ## Deployment
@@ -233,12 +232,12 @@ Audited in Chrome DevTools (Incognito) against the live GitHub Pages site, compa
 
 - **Original Concept & IP:** *Cloud Runner*—including its premise, floating-island world-building, characters (including the five teenage scavengers led by **Rowan Cole**, **Toby Cole**, **Jules Mercer**, **Marek Hale**, and **Kieran Hale**, alongside **Silver Vane** and **Caspian Vane**), site copy, and web implementation—is an original concept by **Raf Joseph (`raf-src`)**.
 - **Copyright Notice:** © 2026 Raf Joseph. All rights reserved. Original written narrative, character descriptions, site copy, and custom code in this repository may not be reproduced, redistributed, or adapted into derivative works without permission.
-- **Visual & Audio Assets:** Teaser visuals, character portraits, and hero imagery were generated using **Google Flow** and refined/composited in **Adobe Illustrator** and **Adobe Photoshop** (with WebP optimization); soundtrack/audio elements (*"Skybound"*) were generated using **Flow Music** by the author, subject to tool terms.
+- **Visual & Audio Assets:** Teaser visuals, character portraits, and hero imagery and video were generated using **Google Flow** 
 - **Libraries, Fonts & Mentorship:** Built with **Bootstrap 5**, **Google Fonts (`Inter`)**, and **Font Awesome** under their respective licenses, with guidance and feedback from bootcamp tutors and peers at WAES and Code Institute.
 
 ## Declaration of Use of AI
 
-- **Media Generation:** **Google Flow** and **Flow Music** were used to generate promotional teaser visuals, character artwork, and soundtrack audio for *Cloud Runner*.
+- **Media Generation:** **Google Flow** was used to generate promotional teaser visuals, character artwork, and video for *Cloud Runner*.
 - **Development & Documentation Support:** **GitHub Copilot** (VS Code *Ask* mode) and **Google Gemini** were used for consultative troubleshooting, CSS/validation/Lighthouse checks, and README organization.
 - **Author Responsibility:** All HTML, CSS, Bootstrap integration, testing, and final commits were reviewed and verified by the author.
 
