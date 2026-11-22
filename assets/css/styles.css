@@ -335,16 +335,6 @@ h6,
   background-repeat: no-repeat;
 }
 
-.updates-hero .hero-content p {
-  max-width: 42rem;
-  margin-bottom: 0;
-  font-size: 1.5rem;
-  font-weight: 400;
-  letter-spacing: 0.04em;
-  line-height: 1.7;
-  text-transform: none;
-}
-
 .updates-main {
   background-color: #181b1f;
   color: #f0f0ec;
@@ -867,12 +857,6 @@ h6,
     font-size: 1.45rem;
     letter-spacing: 0.14em;
     line-height: 1.3;
-  }
-
-  .updates-hero .hero-content p {
-    font-size: 0.9375rem;
-    max-width: 22rem;
-    margin-inline: auto;
   }
 
   .gallery-carousel-container {
