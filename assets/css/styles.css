@@ -1218,11 +1218,12 @@ h6,
 
   .gallery-mobile-list {
     display: grid;
-    gap: 2.25rem;
+    gap: 1.25rem;
   }
 
   .gallery-mobile-list article {
     width: 100%;
+    margin-bottom: 0;
     overflow: visible;
   }
 
