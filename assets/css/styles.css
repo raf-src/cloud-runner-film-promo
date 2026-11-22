@@ -1215,5 +1215,31 @@ h6,
   .cloud-navbar .navbar-collapse.show .cloud-nav-link.cloud-nav-link--music.active {
     color: #82bdca !important;
   }
+
+  .gallery-mobile-list {
+    display: grid;
+    gap: 2.25rem;
+  }
+
+  .gallery-mobile-list article {
+    width: 100%;
+    overflow: visible;
+  }
+
+  .gallery-mobile-list img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    object-position: center;
+    transform: none;
+  }
+
+  .gallery-mobile-tag,
+  .gallery-mobile-list h3,
+  .gallery-mobile-list p {
+    display: block;
+  }
 }
 
