@@ -175,6 +175,34 @@ Because the project uses static HTML5, CSS3, Bootstrap 5, and vanilla JavaScript
 
 * No unresolved bugs remain in the deployed version.
 
+## Validation
+
+### W3C HTML Validation
+
+All five HTML pages pass the W3C Nu Html Checker with zero errors and zero warnings.
+
+* **Home (`index.html`)**[cite: 17]
+  ![W3C HTML Validation — Home](assets/doc-images/cloud-runner-index-page-W3C-HTML-CSS-validation-pass.png)[cite: 17]
+
+* **Gallery (`gallery.html`)**[cite: 16]
+  ![W3C HTML Validation — Gallery](assets/doc-images/cloud-runner-gallery-page-W3C-HTML-CSS-%20validation-pass.png)[cite: 16]
+
+* **Get Updates (`updates.html`)**[cite: 14]
+  ![W3C HTML Validation — Get Updates](assets/doc-images/cloud-runner-updates-page-W3C-HTML-CSS%20validation-pass._2.png)[cite: 14]
+
+* **Soundtrack (`music.html`)**[cite: 12]
+  ![W3C HTML Validation — Soundtrack](assets/doc-images/cloud-runner-music-page-W3C-HTML-CSS-validation-pass.png)[cite: 12]
+
+* **Thank You (`thank-you.html`)**[cite: 13]
+  ![W3C HTML Validation — Thank You](assets/doc-images/cloud-runner-thank-you-page-W3C-HTML-CSS-validation-pass.png)[cite: 13]
+
+### W3C CSS Validation
+
+The custom stylesheet (`assets/css/styles.css`) passes the W3C CSS Checker with zero errors and zero warnings[cite: 15].
+
+* **Stylesheet (`assets/css/styles.css`)**[cite: 15]
+  ![W3C CSS Validation — Stylesheet](assets/doc-images/cloud-runner-css-styles-W3C-HTML-CSS-validation-pass.png)[cite: 15]
+
 ## Attribution
 
 ### Frameworks, Libraries & Fonts
