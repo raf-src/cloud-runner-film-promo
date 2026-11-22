@@ -159,6 +159,26 @@ Audits were run in Chrome DevTools (Incognito) against the live GitHub Pages dep
 
 *(Note: `game.html` was included in the `2026-11-20` baseline set at **100 / 100 / 100 / 100** on Desktop and **97 / 100 / 100 / 100** on Mobile; `music.html` was audited in the latest pass[cite: 16, 17].)*
 
+## Code Validation (W3C HTML & CSS)
+
+All HTML pages and custom CSS were validated on `2026-11-22` using the W3C Markup Validation Service (`validator.w3.org`) and the W3C CSS Validation Service (`jigsaw.w3.org/css-validator/`) via direct input[cite: 6, 7, 8, 9, 10, 11].
+
+### HTML Validation Results
+
+| File | Validator | Result |
+| :--- | :--- | :--- |
+| `index.html` | W3C Markup Validation Service | Passed — 0 errors, 0 warnings[cite: 6] |
+| `gallery.html` | W3C Markup Validation Service | Passed — 0 errors, 0 warnings[cite: 7] |
+| `updates.html` | W3C Markup Validation Service | Passed — 0 errors, 0 warnings[cite: 8] |
+| `thank-you.html` | W3C Markup Validation Service | Passed — 0 errors, 0 warnings[cite: 9] |
+| `music.html` | W3C Markup Validation Service | Passed — 0 errors, 0 warnings[cite: 10] |
+
+### CSS Validation Results
+
+| File | Validator | Result |
+| :--- | :--- | :--- |
+| `assets/css/styles.css` | W3C CSS Validation Service | Passed — 0 errors, 0 warnings[cite: 9, 10, 11] |
+
 ## Credits
 
 ### Concept, Story & Development
