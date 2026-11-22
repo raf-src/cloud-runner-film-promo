@@ -64,15 +64,15 @@ h6,
   color: #ffffff !important;
 }
 
-.cloud-nav-link.cloud-nav-link--game,
-.cloud-nav-link.cloud-nav-link--game:hover,
-.cloud-nav-link.cloud-nav-link--game:focus-visible,
-.cloud-nav-link.cloud-nav-link--game.active {
+.cloud-nav-link.cloud-nav-link--music,
+.cloud-nav-link.cloud-nav-link--music:hover,
+.cloud-nav-link.cloud-nav-link--music:focus-visible,
+.cloud-nav-link.cloud-nav-link--music.active {
   color: #82bdca !important;
 }
 
-.cloud-nav-link.cloud-nav-link--game:hover,
-.cloud-nav-link.cloud-nav-link--game:focus-visible {
+.cloud-nav-link.cloud-nav-link--music:hover,
+.cloud-nav-link.cloud-nav-link--music:focus-visible {
   color: #82bdca !important;
 }
 
@@ -1012,13 +1012,13 @@ h6,
   font-size: 1.5rem;
 }
 
-.game-hero .hero-content h1,
-.game-hero .hero-content .btn {
+.music-hero .hero-content h1,
+.music-hero .hero-content .btn {
   color: #82bdca;
 }
 
-.game-hero .hero-content .btn:hover,
-.game-hero .hero-content .btn:focus-visible {
+.music-hero .hero-content .btn:hover,
+.music-hero .hero-content .btn:focus-visible {
   color: #82bdca;
 }
 
@@ -1209,10 +1209,10 @@ h6,
     background: rgba(8, 12, 14, 0.92);
   }
 
-  .cloud-navbar .navbar-collapse.show .cloud-nav-link.cloud-nav-link--game,
-  .cloud-navbar .navbar-collapse.show .cloud-nav-link.cloud-nav-link--game:hover,
-  .cloud-navbar .navbar-collapse.show .cloud-nav-link.cloud-nav-link--game:focus-visible,
-  .cloud-navbar .navbar-collapse.show .cloud-nav-link.cloud-nav-link--game.active {
+  .cloud-navbar .navbar-collapse.show .cloud-nav-link.cloud-nav-link--music,
+  .cloud-navbar .navbar-collapse.show .cloud-nav-link.cloud-nav-link--music:hover,
+  .cloud-navbar .navbar-collapse.show .cloud-nav-link.cloud-nav-link--music:focus-visible,
+  .cloud-navbar .navbar-collapse.show .cloud-nav-link.cloud-nav-link--music.active {
     color: #82bdca !important;
   }
 }
