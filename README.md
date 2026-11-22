@@ -177,6 +177,38 @@ Because the project uses static HTML5, CSS3, Bootstrap 5, and vanilla JavaScript
 
 ## Validation
 
+### Lighthouse Audits
+
+Lighthouse audits were run across all five live GitHub Pages views on both desktop and mobile.
+
+| Page | Desktop (Performance / Accessibility / Best Practices / SEO) | Mobile (Performance / Accessibility / Best Practices / SEO) |
+| :--- | :--- | :--- |
+| `index.html` | 99 / 100 / 96 / 100 | 96 / 100 / 96 / 100 |
+| `gallery.html` | 99 / 100 / 100 / 100 | 89 / 100 / 100 / 100 |
+| `updates.html` | 100 / 100 / 100 / 100 | 97 / 100 / 100 / 100 |
+| `music.html` | 100 / 100 / 100 / 100 | 97 / 100 / 100 / 100 |
+| `thank-you.html` | 100 / 98 / 100 / 100 | 97 / 98 / 100 / 100 |
+
+* **Home (`index.html`)**
+  ![Lighthouse Desktop — Home](assets/doc-images/cloud-runner-lighthouse-index-page-desktop-check.jpeg)
+  ![Lighthouse Mobile — Home](assets/doc-images/cloud-runner-lighthouse-mobile-check.png)
+
+* **Gallery (`gallery.html`)**
+  ![Lighthouse Desktop — Gallery](assets/doc-images/cloud-runner-lighthouse-gallery-desktop-check.jpeg)
+  ![Lighthouse Mobile — Gallery](assets/doc-images/cloud-runner-lighthouse-gallery-mobile-check.png)
+
+* **Get Updates (`updates.html`)**
+  ![Lighthouse Desktop — Get Updates](assets/doc-images/cloud-runner-lighthouse-updates-desktop-check.jpeg)
+  ![Lighthouse Mobile — Get Updates](assets/doc-images/cloud-runner-lighthouse-updates-mobile-check.png)
+
+* **Soundtrack (`music.html`)**
+  ![Lighthouse Desktop — Soundtrack](assets/doc-images/cloud-runner-lighthouse-music-desktop-check.jpeg)
+  ![Lighthouse Mobile — Soundtrack](assets/doc-images/cloud-runner-lighthouse-music-mobile-check.png)
+
+* **Thank You (`thank-you.html`)**
+  ![Lighthouse Desktop — Thank You](assets/doc-images/cloud-runner-lighthouse-thankyou-desktop-check.jpeg)
+  ![Lighthouse Mobile — Thank You](assets/doc-images/cloud-runner-lighthouse-thankyou-mobile-check.png)
+
 ### W3C HTML Validation
 
 All five HTML pages pass the W3C Nu Html Checker with zero errors and zero warnings.
