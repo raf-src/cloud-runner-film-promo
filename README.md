@@ -1,3 +1,27 @@
+# Cloud Runner — Official Film Promotional Website
+
+**[View the Live Deployed Website on GitHub Pages](https://raf-src.github.io/cloud-runner-film-promo/)**
+
+## Table of Contents
+
+* [Purpose](#purpose)
+* [Features & User Benefits](#features--user-benefits)
+* [Deployment](#deployment)
+* [Bugs & Errors](#bugs--errors)
+* [Attribution](#attribution)
+* [Declaration of Use of AI](#declaration-of-use-of-ai)
+
+## Purpose
+
+*Cloud Runner* is a responsive promotional website built with HTML5, CSS3, and Bootstrap 5 for an original sci-fi film project. Its purpose is to introduce visitors to the story world, showcase key characters and visual teasers, highlight the soundtrack, and give fans a clear way to sign up for release updates.
+
+## Features & User Benefits
+
+* **Responsive Multi-Page Navigation:** Consistent navigation across `index.html`, `gallery.html`, `updates.html`, `music.html`, and `thank-you.html` makes it easy for visitors to browse from desktop or mobile screens.
+* **Story Synopsis, Credits & Trailer Showcase (`index.html`):** Gives first-time visitors a quick overview of the film's premise, production credits, and featured trailer video in one place.
+* **Character & Visual Gallery (`gallery.html`):** Presents character artwork and world-building visuals via an interactive carousel on larger screens and a clean stacked layout on mobile.
+* **Soundtrack & Release Updates (`music.html`, `updates.html`, `thank-you.html`):** Lets visitors explore the soundtrack direction and submit the updates form with immediate confirmation on `thank-you.html`.
+
 # Cloud Runner
 
 A promotional website for the original dystopian sci-fi film *Cloud Runner*
