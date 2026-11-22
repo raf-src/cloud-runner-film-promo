@@ -327,11 +327,11 @@ h6,
 
 .updates-hero {
   /* min-height: 60vh; */
-  height: 100vh;
-  min-height: 100svh;
+  height: 100svh;
+  min-height: 500px;
   background-image: url("../images/cloud-runner-hero-image-updates-page.webp");
   background-position: center;
-  background-size: 115% auto;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
