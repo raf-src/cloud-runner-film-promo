@@ -133,6 +133,32 @@ The *Cloud Runner* promotional website is deployed and hosted using **GitHub Pag
 
 Because the project uses static HTML5, CSS3, Bootstrap 5, and vanilla JavaScript with relative asset paths (`assets/...`), pushing new commits to `main` automatically triggers a GitHub Pages rebuild so updates go live without extra server configuration.
 
+## Lighthouse Testing & Performance Audits (Desktop & Mobile)
+
+Audits were run in Chrome DevTools (Incognito) against the live GitHub Pages deployment for both **Desktop** and **Mobile** viewports, comparing the baseline run (`2026-11-20`) against the latest run (`2026-11-22`)[cite: 1, 2, 10, 11, 14, 15, 16, 17].
+
+### Key Optimisations Applied Between Runs
+* **Image Format & Compression:** Converted key assets to `.webp` and optimised file sizes to speed up Largest Contentful Paint (LCP).
+* **Above-the-Fold Priority:** Added `fetchpriority="high"` to primary hero/portrait assets, kept `loading="lazy"` on below-the-fold portraits, and preloaded the gallery header background image (`<link rel="preload" as="image" ... fetchpriority="high">`) in `gallery.html`.
+* **Viewport & Background Scaling:** Updated hero containers (including `.updates-hero` and `.updates-hero-thank-you`) to use `100svh`, `min-height: 500px`, and `background-size: cover` so desktop and mobile framing stay consistent without awkward cropping or overflow[cite: 16].
+
+### First Test vs. Latest Test Results
+
+| Page | Viewport | First Test (`2026-11-20`)<br>Perf / Acc / BP / SEO | Latest Test (`2026-11-22`)<br>Perf / Acc / BP / SEO | Perf Delta |
+| :--- | :--- | :---: | :---: | :---: |
+| `index.html` | Desktop | 95 / 100 / — / 100 | **99 / 100 / 96 / 100**[cite: 1] | +4[cite: 1] |
+| `index.html` | Mobile | 94 / 100 / — / 100 | **96 / 100 / 96 / 100**[cite: 2] | +2[cite: 2] |
+| `gallery.html` | Desktop | 80 / 100 / — / 100 | **99 / 100 / 100 / 100**[cite: 10] | +19[cite: 10] |
+| `gallery.html` | Mobile | 73 / 100 / — / 100 | **89 / 100 / 100 / 100**[cite: 11] | +16[cite: 11] |
+| `updates.html` | Desktop | 61 / 100 / — / 100 | **100 / 100 / 100 / 100**[cite: 14] | +39[cite: 14] |
+| `updates.html` | Mobile | 98 / 100 / — / 100 | **97 / 100 / 100 / 100**[cite: 15] | -1[cite: 15] |
+| `music.html` | Desktop | *Not recorded in first set* | **100 / 100 / 100 / 100**[cite: 16] | — |
+| `music.html` | Mobile | *Not recorded in first set* | **97 / 100 / 100 / 100**[cite: 17] | — |
+| `thank-you.html` | Desktop | 85 / 98 / 100 / 100[cite: 17] | **100 / 98 / 100 / 100**[cite: 18] | +15[cite: 17, 18] |
+| `thank-you.html` | Mobile | 97 / 98 / 100 / 100[cite: 17] | **97 / 98 / 100 / 100**[cite: 12, 15] | 0[cite: 15, 17] |
+
+*(Note: `game.html` was included in the `2026-11-20` baseline set at **100 / 100 / 100 / 100** on Desktop and **97 / 100 / 100 / 100** on Mobile; `music.html` was audited in the latest pass[cite: 16, 17].)*
+
 ## Credits
 
 ### Concept, Story & Development
