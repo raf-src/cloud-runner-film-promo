@@ -133,6 +133,42 @@ The *Cloud Runner* promotional website is deployed and hosted using **GitHub Pag
 
 Because the project uses static HTML5, CSS3, Bootstrap 5, and vanilla JavaScript with relative asset paths (`assets/...`), pushing new commits to `main` automatically triggers a GitHub Pages rebuild so updates go live without extra server configuration.
 
+## Bugs & Errors
+
+### Resolved Bugs & Technical Fixes
+
+| Issue | Page / File | Fix Applied |
+| :--- | :--- | :--- |
+| **W3C HTML Validation Errors** | `index.html`, `gallery.html`, `updates.html`, `music.html`, `thank-you.html` | Removed trailing slashes on void elements (`<meta>`, `<link>`, `<img>`) and replaced invalid `aria-label` attributes on non-interactive `<div>` elements with valid semantic structure. All five HTML pages now pass W3C validation with `0` errors and `0` warnings. |
+| **W3C CSS Syntax & Cascade Cleanup** | `assets/css/styles.css` | Corrected `border-width` syntax, removed unused legacy selectors and duplicate rules, consolidated redundant media-query declarations, and organized the stylesheet by shared components and page sections. Passes W3C CSS validation with `0` errors and `0` warnings. |
+| **Large Image Payloads & LCP Bottlenecks** | `index.html`, `gallery.html`, `updates.html`, `thank-you.html` | Converted heavy raster imagery to optimized `.webp` files and applied `loading="lazy"` to offscreen images, significantly improving Lighthouse Performance and Largest Contentful Paint (LCP) scores across desktop and mobile. |
+| **Mobile Gallery Character Layout Overflow** | `gallery.html`, `assets/css/styles.css` | Built a dedicated stacked mobile character list below the desktop carousel breakpoint and adjusted mobile typography and image aspect ratios (`16 / 9`) so character profiles remain legible without horizontal overflow. |
+| **Footer Alignment Inconsistencies** | All HTML pages, `assets/css/styles.css` | Standardized footer spacing and flex wrapping across desktop and mobile viewports so copyright, internal links, and social icons align consistently on every page. |
+
+### Known Issues
+
+* No unresolved bugs remain in the deployed version.
+
+## Attribution
+
+### Frameworks, Libraries & Fonts
+
+* **[Bootstrap 5 (v5.3.8)](https://getbootstrap.com/):** Used for the responsive grid system, collapsible navigation bar, gallery carousel, and aspect-ratio video containers.
+* **[Google Fonts — Inter](https://fonts.google.com/specimen/Inter):** Used for site-wide typography.
+* **[Font Awesome / Bootstrap Icons](https://fontawesome.com/):** Used for footer and social media icons *(update to match the exact icon library linked in your `<head>`)*.
+
+### Visual & Audio Media
+
+* **Film Concept, Story & World-Building:** Original sci-fi concept (*Cloud Runner*) created by Raf Joseph.
+* **Teaser Visuals, Character Portraits & Hero Artwork:** Generated using **Google Flow** from custom art-direction prompts and optimized to `.webp` format by the author.
+* **Official Soundtrack ("Skybound"):** Original teaser track concept and audio created using **Flow Music** by the author.
+
+## Declaration of Use of AI
+
+* **Media Generation:** **Google Flow** and **Flow Music** were used to generate the promotional teaser visuals, character profile artwork, and soundtrack audio track for *Cloud Runner*.
+* **Development & Code Review Assistance:** **GitHub Copilot** (in VS Code *Ask* mode) and **Google Gemini** were used as consultative tools during development for CSS organization, W3C validation troubleshooting, Lighthouse performance auditing, and README documentation structure.
+* **Author Responsibility:** All HTML structure, Bootstrap layout integration, custom CSS styling, visual curation, testing, and final code commits were written, reviewed, and verified manually by the author.
+
 ## Lighthouse Testing & Performance Audits (Desktop & Mobile)
 
 Audits were run in Chrome DevTools (Incognito) against the live GitHub Pages deployment for both **Desktop** and **Mobile** viewports, comparing the baseline run (`2026-11-20`) against the latest run (`2026-11-22`)[cite: 1, 2, 10, 11, 14, 15, 16, 17].
