@@ -109,7 +109,7 @@ The visual palette pairs deep slate and charcoal-slate backgrounds with off-whit
 
 ### Tools & Services
 - **VS Code, Git, GitHub & GitHub Pages:** Editor, version control, repository hosting, and static deployment.
-- **Google Flow & Flow Music:** Visual teaser/character artwork and soundtrack generation.
+- **Google Flow:** Visual teaser/character artwork and video generation.
 - **Google Chrome DevTools & W3C Validators:** Responsiveness testing, Lighthouse auditing, and HTML/CSS validation.
 
 ## Deployment
