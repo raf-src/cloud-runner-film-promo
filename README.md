@@ -19,7 +19,8 @@ A promotional website for the original dystopian sci-fi film *Cloud Runner*.
 - [Validation](#validation)
 - [Credits, Attribution & Ownership](#credits-attribution--ownership)
 - [Declaration of Use of AI](#declaration-of-use-of-ai)
-
+- [Future Features](#future-features)
+  
 ## Purpose & User Stories
 
 *Cloud Runner* is a responsive multi-page promotional website built with HTML5, CSS3, and Bootstrap 5 for an original sci-fi film project. It introduces visitors to the story world, showcases key characters and visual teasers, highlights the soundtrack, and provides an updates sign-up flow.
@@ -240,3 +241,13 @@ Audited in Chrome DevTools (Incognito) against the live GitHub Pages site, compa
 - **Media Generation:** **Google Flow** and **Flow Music** were used to generate promotional teaser visuals, character artwork, and soundtrack audio for *Cloud Runner*.
 - **Development & Documentation Support:** **GitHub Copilot** (VS Code *Ask* mode) and **Google Gemini** were used for consultative troubleshooting, CSS/validation/Lighthouse checks, and README organization.
 - **Author Responsibility:** All HTML, CSS, Bootstrap integration, testing, and final commits were reviewed and verified by the author.
+
+## Future Features
+
+Planned enhancements and future expansions for *Cloud Runner* beyond the initial promotional release:
+
+- **Interactive Dropdown Button on Home (`index.html`):** Add a clean dropdown menu on the home page for quick jumping to sections or screening/release options without cluttering the top navigation bar.
+- **Ticket Booking Form at Launch:** Introduce a dedicated ticket booking flow and screening finder once *Cloud Runner* approaches its theatrical release window.
+- **Official Music Video Showcase:** Embed or feature the official *"Skybound"* music video alongside visual teasers and behind-the-scenes clips.
+- **Full Soundtrack Tracklist (Song & Artist Credits):** Expand the soundtrack page with a realistic, structured tracklist listing each song title, featured artist/composer, and track details to build out the film's audio identity.
+- **Spotify Soundtrack Playlist Link:** Add a direct link (and optional embedded player) to an official *Cloud Runner* soundtrack playlist on Spotify so visitors can stream the score and related tracks.
