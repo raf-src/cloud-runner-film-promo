@@ -276,21 +276,6 @@ h6,
   overflow-wrap: anywhere;
 }
 
-.trailer-banner {
-  position: relative;
-  display: flex;
-  min-height: 85vh;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  background-image:
-    linear-gradient(180deg, rgba(5, 12, 15, 0.62), rgba(5, 12, 15, 0.72)),
-    url("../images/cloud-runner-image-feature-banner-index-page.webp");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 .trailer-content {
   position: relative;
   z-index: 1;
@@ -316,7 +301,7 @@ h6,
   min-height: 60vh;
   align-items: center;
   overflow: hidden;
-  background-image: url("../images/cloud-runner-hero-image-1-index-page.jpeg");
+  background-image: url("../images/cloud-runner-image-feature-banner-index-page.webp");
   background-position: center bottom 5%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -979,10 +964,6 @@ h6,
 
   .cloud-navbar .navbar-nav {
     gap: 1rem;
-  }
-
-  .trailer-banner {
-    min-height: 60vh;
   }
 
   .trailer-label {
