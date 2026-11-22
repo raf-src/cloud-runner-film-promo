@@ -4,160 +4,104 @@
 
 # Cloud Runner — Official Film Promotional Website
 
+A promotional website for the original dystopian sci-fi film *Cloud Runner*.
+
+> *"In a world of floating industrial cities, five teenage tech-scavengers known as the Cloud Runners race to reach a legendary generator city to restore power to their region—hunted across the skies by Caspian, ruthless heir to the White City, a colossal spaceship city that roams the regions siphoning energy from powerless floating islands, until his peacekeeping sister, Silver, teams up with the crew's young leader to try and stop him and bring unity between their worlds."*
+
 ## Table of Contents
 
-* [Purpose](#purpose)
-* [Features & User Benefits](#features--user-benefits)
-* [Deployment](#deployment)
-* [Bugs & Errors](#bugs--errors)
-* [Attribution](#attribution)
-* [Declaration of Use of AI](#declaration-of-use-of-ai)
+- [Purpose & User Stories](#purpose--user-stories)
+- [Features & User Benefits](#features--user-benefits)
+- [Design](#design)
+- [Technologies & Tools Used](#technologies--tools-used)
+- [Deployment](#deployment)
+- [Bugs & Errors](#bugs--errors)
+- [Validation](#validation)
+- [Credits, Attribution & Ownership](#credits-attribution--ownership)
+- [Declaration of Use of AI](#declaration-of-use-of-ai)
 
-## Purpose
+## Purpose & User Stories
 
-*Cloud Runner* is a responsive promotional website built with HTML5, CSS3, and Bootstrap 5 for an original sci-fi film project. Its purpose is to introduce visitors to the story world, showcase key characters and visual teasers, highlight the soundtrack, and give fans a clear way to sign up for release updates.
+*Cloud Runner* is a responsive multi-page promotional website built with HTML5, CSS3, and Bootstrap 5 for an original sci-fi film project. It introduces visitors to the story world, showcases key characters and visual teasers, highlights the soundtrack, and provides an updates sign-up flow.
+
+1. **Cinematic Hero Header (#1)**
+   - *User Story:* As a site visitor, I want a full-viewport cinematic hero header when I land on the page, so that I am immediately immersed in the dystopian atmosphere of *Cloud Runner* and can access key calls to action.
+   - *Acceptance Criteria:* Full-viewport hero section (`100vh`) with a muted background video loop, dark gradient overlay, centered title, logline, primary CTA, and top navigation.
+
+2. **Film Details & Synopsis Grid (#2)**
+   - *User Story:* As a film enthusiast, I want to view the official movie poster alongside a clear synopsis and full cast/crew details, so that I can understand the plot and background of the film.
+   - *Acceptance Criteria:* Responsive Bootstrap grid displaying the movie poster, synopsis, and structured cast, director, screenplay, and production credits.
+
+3. **Video Teaser & Media Banner (#3)**
+   - *User Story:* As an explorer of the site, I want to see a cinematic teaser video section directly below the synopsis, so that I can preview official footage and engage with the visual media.
+   - *Acceptance Criteria:* Full-width media banner and responsive 16:9 trailer video player below the film details.
+
+4. **Responsive Multi-Page Navigation (#4)**
+   - *User Story:* As a user on any device (mobile or desktop), I want intuitive navigation across all pages (`index.html`, `gallery.html`, `updates.html`, `music.html`, and `thank-you.html`), so that I can browse the site quickly without layout breakage.
+   - *Acceptance Criteria:* Collapsible Bootstrap 5 mobile menu and working links across all pages.
+
+5. **Early-Access Contact & Newsletter Form (#5)**
+   - *User Story:* As an engaged visitor, I want to submit my details via a clean sign-up form, so that I can receive release updates and alerts for *Cloud Runner*.
+   - *Acceptance Criteria:* Styled form inputs with HTML5 validation and redirect/confirmation feedback on `thank-you.html`.
+
+6. **Immersive World & Character Gallery (#6)**
+   - *User Story:* As a site visitor exploring the *Cloud Runner* world page, I want a dedicated gallery view for characters and visuals, so that I can explore the lore cleanly across screen sizes.
+   - *Acceptance Criteria:* Dedicated `gallery.html` page with responsive desktop carousel and mobile card layout using optimized WebP imagery.
 
 ## Features & User Benefits
 
-* **Responsive Multi-Page Navigation:** Consistent navigation across `index.html`, `gallery.html`, `updates.html`, `music.html`, and `thank-you.html` makes it easy for visitors to browse from desktop or mobile screens.
-* **Story Synopsis, Credits & Trailer Showcase (`index.html`):** Gives first-time visitors a quick overview of the film's premise, production credits, and featured trailer video in one place.
-* **Character & Visual Gallery (`gallery.html`):** Presents character artwork and world-building visuals via an interactive carousel on larger screens and a clean stacked layout on mobile.
-* **Soundtrack & Release Updates (`music.html`, `updates.html`, `thank-you.html`):** Lets visitors explore the soundtrack direction and submit the updates form with immediate confirmation on `thank-you.html`.
-
-# Cloud Runner
-
-A promotional website for the original dystopian sci-fi film *Cloud Runner*
-
-"In a world of floating industrial cities, five teenage tech-scavengers known as the Cloud Runners race to reach a legendary generator city to restore power to their region—hunted across the skies by Caspian, ruthless heir to the White City, a colossal spaceship city that roams the regions siphoning energy from powerless floating islands, until his peacekeeping sister, Silver, teams up with the crew's young leader to try and stop him and bring unity between their worlds."
-
-## User Stories
-
-1. **Cinematic Hero Header (#1)**
-   * *User Story:* As a site visitor, I want a full-viewport cinematic hero header when I land on the page, so that I am immediately immersed in the dystopian atmosphere of *Cloud Runner* and can access key calls to action.
-   * *Acceptance Criteria:*
-     * The hero section spans the full viewport height (`100vh`).
-     * Displays a muted video loop with a dark gradient overlay.
-     * Features centered title typography (*Cloud Runner*), logline, and a primary CTA button styled with Bootstrap.
-     * Transparent navbar is fixed/positioned at the top with working anchor links.
-
-2. **Film Details & Synopsis Grid (#2)**
-   * *User Story:* As a film enthusiast, I want to view the official movie poster alongside a clear synopsis and full cast/crew details, so that I can understand the plot and background of the film.
-   * *Acceptance Criteria:*
-     * Responsive 3-column layout utilising the Bootstrap grid system (`row`, `col-lg-4`).
-     * Column 1 displays the 2:3 aspect ratio movie poster with responsive image scaling (`img-fluid`).
-     * Column 2 contains the editorial film synopsis and release statement.
-     * Column 3 lists structured metadata including starring cast, director, screenplay, and production credits.
-
-3. **Video Teaser & Media Banner (#3)**
-   * *User Story:* As an explorer of the site, I want to see a cinematic teaser video section directly below the synopsis, so that I can preview official footage and engage with the visual media.
-   * *Acceptance Criteria:*
-     * Full-width container section positioned below the main synopsis details.
-     * Includes a centred play icon/button element and clear editorial text overlay.
-
-4. **Responsive Multi-Page Navigation (#4)**
-   * *User Story:* As a user on any device (mobile or desktop), I want intuitive navigation across all pages (`index.html`, `gallery.html`, `updates.html`), so that I can browse the site quickly without layout breakage.
-   * *Acceptance Criteria:*
-     * Navbar collapses into a responsive mobile menu on smaller screens using Bootstrap 5 toggle components.
-     * All internal links correctly connect the home page, gallery page, and updates page.
-     * Floating "Jump to top" button provides fast navigation on long-scrolling mobile views.
-
-5. **Early-Access Contact & Newsletter Form (#5)**
-   * *User Story:* As an engaged visitor, I want to submit my email address via a clean early-access sign-up form, so that I can receive release updates and alerts for *Cloud Runner*.
-   * *Acceptance Criteria:*
-     * Dedicated form inputs styled using Bootstrap form components (`form-control`, `form-label`).
-     * Built-in HTML5 input validation for email fields.
-     * Success state or redirection feedback when the form is submitted.
-
-6. **Immersive World & Character Gallery (#6)**
-   * *User Story:* As a site visitor exploring the *Cloud Runner* world page, I want an immersive top hero section followed by horizontal image galleries for film scenes and character portraits, so that I can explore the visual lore and characters without clutter.
-   * *Acceptance Criteria:*
-     * Dedicated `gallery.html` page featuring a cinematic top hero banner matching the site's design language.
-     * Scene Gallery: A horizontal scrolling card carousel utilizing CSS scroll-snap and flexbox layout with forward and previous navigation arrows to browse film stills.
-     * Character Portraits Gallery: A separate horizontal image gallery showcasing key character visuals and lore cards.
-     * Fully responsive design ensuring smooth touch-scrolling and clean alignment on mobile and desktop viewports.
+- **Responsive Multi-Page Navigation (`.cloud-navbar`):** Consistent navigation across `index.html`, `gallery.html`, `updates.html`, `music.html`, and `thank-you.html` with a collapsible mobile menu and clear active/focus states.
+- **Home Page (`index.html`):** Full-viewport hero header with background video and CTA, atmospheric banner, three-column poster/synopsis/cast-and-crew grid, and responsive 16:9 trailer showcase.
+- **Character & World Gallery (`gallery.html`):** Visual header plus a responsive desktop carousel and mobile stacked card list profiling the *Cloud Runner* cast and characters using optimized `.webp` portraits.
+- **Soundtrack Page (`music.html`):** Dedicated showcase highlighting the soundtrack direction and teaser track (*"Skybound"*).
+- **Early-Access Updates & Confirmation (`updates.html`, `thank-you.html`):** Subscription form with native HTML5 validation that redirects to a dedicated confirmation page upon submission.
+- **Site Footer (`.site-footer`):** Consistent dark footer across all pages with copyright notice, legal/contact links, and social media links.
 
 ## Design
 
 ### Color Scheme
 
-The visual palette for *Cloud Runner* pairs deep atmospheric charcoal-slate backgrounds with crisp off-white typography and a cool teal-blue interactive accent[cite: 13]:
+The visual palette pairs deep slate and charcoal-slate backgrounds with off-white/white typography and cool teal-blue accents:
 
 | Hex Value | Role & Usage |
 | :--- | :--- |
-| `#101416` | Primary page/body background (`body`), gallery header background (`.gallery-navbar-header`), and hero CTA hover text (`.hero-content .btn:hover`)[cite: 13] |
-| `#101214` | Form inputs and select menus (`.updates-form input`, `.updates-form select`), gallery cards (`.gallery-card`), and trailer container background (`.trailer-section .ratio`)[cite: 13] |
-| `#181b1f` | Film details/synopsis section background (`.film-details`) and updates page main container (`.updates-main`)[cite: 13] |
-| `#080c0e` | Site footer background (`.site-footer`)[cite: 13] |
-| `#f0f0ec` | Primary off-white text and borders across the hero, synopsis, cast/crew credits, forms, gallery, carousel, footer, and confirmation views[cite: 13] |
-| `#ffffff` | Pure white hover, focus, and active states for navigation links (`.cloud-nav-link`), brand text (`.cloud-home`), and cinematic banner headings[cite: 13] |
-| `#82bdca` | Atmospheric teal-blue accent for the game page heading and CTA (`.game-hero`), plus default, hover, focus, and mobile collapsed navigation link states[cite: 13] |
+| `#101416` | Primary page background (`body`), gallery header, and hero CTA hover text |
+| `#101214` | Form controls, gallery cards, and trailer container background |
+| `#181b1f` | Film details/synopsis section and updates main container background |
+| `#080c0e` | Site footer background (`.site-footer`) |
+| `#f0f0ec` | Primary off-white text and borders across sections, forms, cards, and footer |
+| `#ffffff` | High-contrast hover, focus, and active states for navigation and headings |
+| `#82bdca` | Teal-blue accent for highlights and interactive states |
 
-* **Overlays & Contrast:** Translucent dark gradient overlays derived from the base dark palette sit behind hero banners, carousel frames, and video sections so light typography (`#f0f0ec` / `#ffffff`) remains legible across desktop and mobile viewports.
+- **Overlays & Contrast:** Dark gradient overlays sit behind hero banners, media frames, and video sections so light text remains legible across desktop and mobile viewports.
 
 ### Typography
 
-* **Primary Font (`Inter`):** Imported via Google Fonts and applied consistently across body copy, navigation, synopses, credits, cards, and form controls, paired with clean system sans-serif fallbacks (`sans-serif`) so text renders immediately without layout shift.
-* **Display & Editorial Hierarchy:** Headings, theatrical release banners, and interactive CTAs use uppercase styling, deliberate font weights, and wide letter-spacing (`letter-spacing`) to create a sharp cinematic title-card aesthetic without relying on heavy external display font files.
-
-## Features
-
-### Existing Features
-
-* **Responsive Navigation Bar (`.cloud-navbar`):** Fixed/transparent header on hero pages and solid dark header on subpages featuring the *Cloud Runner* brand link, accessible active-page indicators (`aria-current="page"`), high-contrast hover/focus states, and a collapsible mobile menu with a custom dark backdrop (`max-width: 767.98px`) for clear legibility over video and imagery.
-* **Home Page (`index.html`):**
-  * **Full-Viewport Hero Section:** Autoplaying, muted, looping atmospheric background video paired with dark gradient overlays, the film title, release window (*In Cinemas Fall 2027*), and primary call-to-action buttons (*Watch Teaser* / *Explore Gallery*).
-  * **Film Details, Poster & Credits Grid:** Three-column responsive layout presenting the official *Cloud Runner* theatrical poster, official synopsis, cast and crew billing (directed by Henrik Lindqvist, starring Callum Reid, Noah Gallagher, Darius Okafor, Leo Castellanos, Tomasz Novak, and Julian Thorne), and release metadata.
-  * **Cinematic Teaser & Trailer Showcase:** Full-bleed atmospheric banner and responsive 16:9 trailer section (`ratio-16x9`) featuring custom preview video and score audio.
-* **Character & World Gallery (`gallery.html`):**
-  * **Gallery Hero Banner:** Full-width visual header introducing the divided world of the floating islands and the upper capital.
-  * **Interactive Character Showcase:** Responsive desktop carousel with custom slide indicators and controls paired with a dedicated mobile vertical card layout (`.gallery-mobile-list`), profiling the five Cloud Runners, Caspian Vane, and Silver using optimized WebP portraits.
-* **Early-Access Updates Sign-Up (`updates.html`):**
-  * **Interactive Subscription Form:** Clean dark-themed form collecting visitor name, email address, preferred sector/region, and genre/interest selection, using native HTML5 validation alongside custom validation feedback to prevent incomplete submissions before redirecting to the confirmation view.
-* **Subscription Confirmation (`thank-you.html`):**
-  * **Dedicated Confirmation State:** Atmospheric confirmation screen acknowledging early-access registration and providing a direct return path to the main site.
-* **Game Teaser Page (`game.html`):**
-  * **Interactive Experience Preview:** Dedicated promotional preview page featuring full-bleed background video, `#82bdca` teal-blue accent styling, and teaser copy introducing the *Cloud Runner* companion experience.
-* **Site Footer (`.site-footer`):** Consistent dark footer (`#080c0e`) across all pages with copyright details, studio/production credits, and social media links.
+- **Primary Font (`Inter`):** Imported via Google Fonts with system `sans-serif` fallbacks across body copy, navigation, synopses, credits, cards, and forms.
+- **Display Hierarchy:** Uppercase headings, release banners, and CTAs with measured weights and letter-spacing for a cinematic title-card aesthetic.
 
 ## Technologies & Tools Used
 
-### Languages
+### Languages & Frameworks
+- **HTML5:** Semantic markup across all five pages.
+- **CSS3:** Custom styling, Flexbox, CSS Grid, variables, and responsive media queries.
+- **Bootstrap 5:** Responsive grid system, utility classes, navbar, and carousel/ratio components.
+- **Google Fonts (`Inter`) & Font Awesome:** Typography and scalable icons.
 
-* **HTML5:** Semantic structure and content across all project pages.
-* **CSS3:** Custom styling, responsive layouts, Flexbox, CSS Grid, variables, and media queries.
-* **JavaScript (ES6):** Client-side form validation logic on the updates page.
-
-### Frameworks & Libraries
-
-* **Bootstrap 5:** Rapid responsive grid system, utility classes, navigation components, and modal/carousel framework.
-* **Google Fonts:** Sourcing and implementation of the project typography (`Inter` with `sans-serif` fallback).
-* **Font Awesome:** Scalable vector icons used in navigation links, buttons, and the footer.
-
-### Programs & Services
-
-* **VS Code:** Primary Integrated Development Environment (IDE) for writing code.
-* **Git:** Version control system used to track changes and commit code.
-* **GitHub:** Cloud-based hosting platform for Git repositories, issue tracking, and project management.
-* **GitHub Pages:** Hosting service used to deploy the live version of the website.
-* **Google Flow AI:** Used for generating background video and teaser audio assets.
-* **Google Chrome DevTools:** Browser-based suite used extensively for debugging, testing responsiveness, and Lighthouse auditing.
-* **W3C Markup Validation Service & CSS Validation Service:** Used for validating HTML and CSS code quality and compliance.
+### Tools & Services
+- **VS Code, Git, GitHub & GitHub Pages:** Editor, version control, repository hosting, and static deployment.
+- **Google Flow & Flow Music:** Visual teaser/character artwork and soundtrack generation.
+- **Adobe Illustrator & Adobe Photoshop:** Graphic design, visual polish, and WebP asset preparation.
+- **Google Chrome DevTools & W3C Validators:** Responsiveness testing, Lighthouse auditing, and HTML/CSS validation.
 
 ## Deployment
 
-The *Cloud Runner* promotional website is deployed and hosted using **GitHub Pages** directly from the `main` branch of the GitHub repository.
+The website is deployed via **GitHub Pages** from the `main` branch (`https://raf-src.github.io/cloud-runner-film-promo/`).
 
-### Deploying to GitHub Pages
-
-1. Push all committed project files (`index.html`, `gallery.html`, `updates.html`, `thank-you.html`, `game.html`, `assets/`, and `README.md`) to the `main` branch on GitHub (`https://github.com/raf-src/cloud-runner-film-promo`).
-2. Open the repository on **GitHub** and navigate to **Settings** > **Pages** (under the *Code and automation* section).
-3. Under **Build and deployment** > **Source**, select **Deploy from a branch**.
-4. Set **Branch** to **`main`** and the folder to **`/ (root)`**, then click **Save**.
-5. Wait a minute or two for GitHub Actions / Pages to build and publish the site; the live URL will appear on the **Pages** settings screen (`https://raf-src.github.io/cloud-runner-film-promo/`).
-
-### Updating the Live Site
-
-Because the project uses static HTML5, CSS3, Bootstrap 5, and vanilla JavaScript with relative asset paths (`assets/...`), pushing new commits to `main` automatically triggers a GitHub Pages rebuild so updates go live without extra server configuration.
+1. Commit and push all project files (`index.html`, `gallery.html`, `updates.html`, `music.html`, `thank-you.html`, `assets/`, and `README.md`) to `main` on GitHub (`https://github.com/raf-src/cloud-runner-film-promo`).
+2. In the GitHub repository, open **Settings** > **Pages**.
+3. Under **Build and deployment** > **Source**, select **Deploy from a branch**, choose **`main`** and **`/ (root)`**, and save.
+4. Pushing subsequent commits to `main` automatically triggers a GitHub Pages rebuild.
 
 ## Bugs & Errors
 
@@ -165,161 +109,92 @@ Because the project uses static HTML5, CSS3, Bootstrap 5, and vanilla JavaScript
 
 | Issue | Page / File | Fix Applied |
 | :--- | :--- | :--- |
-| **W3C HTML Validation Errors** | `index.html`, `gallery.html`, `updates.html`, `music.html`, `thank-you.html` | Removed trailing slashes on void elements (`<meta>`, `<link>`, `<img>`) and replaced invalid `aria-label` attributes on non-interactive `<div>` elements with valid semantic structure. All five HTML pages now pass W3C validation with `0` errors and `0` warnings. |
-| **W3C CSS Syntax & Cascade Cleanup** | `assets/css/styles.css` | Corrected `border-width` syntax, removed unused legacy selectors and duplicate rules, consolidated redundant media-query declarations, and organized the stylesheet by shared components and page sections. Passes W3C CSS validation with `0` errors and `0` warnings. |
-| **Large Image Payloads & LCP Bottlenecks** | `index.html`, `gallery.html`, `updates.html`, `thank-you.html` | Converted heavy raster imagery to optimized `.webp` files and applied `loading="lazy"` to offscreen images, significantly improving Lighthouse Performance and Largest Contentful Paint (LCP) scores across desktop and mobile. |
-| **Mobile Gallery Character Layout Overflow** | `gallery.html`, `assets/css/styles.css` | Built a dedicated stacked mobile character list below the desktop carousel breakpoint and adjusted mobile typography and image aspect ratios (`16 / 9`) so character profiles remain legible without horizontal overflow. |
-| **Footer Alignment Inconsistencies** | All HTML pages, `assets/css/styles.css` | Standardized footer spacing and flex wrapping across desktop and mobile viewports so copyright, internal links, and social icons align consistently on every page. |
+| **W3C HTML Validation Errors** | `index.html`, `gallery.html`, `updates.html`, `music.html`, `thank-you.html` | Removed trailing slashes on void elements (`<meta>`, `<link>`, `<img>`) and fixed invalid `aria-label` usage on non-interactive `<div>` elements so all five pages pass with `0` errors and `0` warnings. |
+| **W3C CSS Syntax & Cascade Cleanup** | `assets/css/styles.css` | Fixed `border-width` syntax, removed unused/duplicate rules, consolidated media queries, and structured styles cleanly so the stylesheet passes with `0` errors and `0` warnings. |
+| **Large Image Payloads & LCP** | All pages, `assets/images/` | Converted heavy images to `.webp`, applied `loading="lazy"` where appropriate, and added `fetchpriority="high"` / preloading on key hero/header assets. |
+| **Mobile Gallery Layout** | `gallery.html`, `assets/css/styles.css` | Added a dedicated stacked mobile layout below the desktop carousel breakpoint and tuned mobile typography and `16 / 9` image framing to prevent horizontal overflow. |
+| **Footer Alignment** | All pages, `assets/css/styles.css` | Standardized footer spacing and flex wrapping across desktop and mobile viewports. |
 
 ### Known Issues
-
-* No unresolved bugs remain in the deployed version.
+- None.
 
 ## Validation
 
-### Lighthouse Audits
+### W3C HTML & CSS Validation
 
-Lighthouse audits were run across all five live GitHub Pages views on both desktop and mobile.
+Validated on `2026-11-22` via W3C Nu Html Checker and W3C CSS Checker—all five HTML pages and `assets/css/styles.css` passed with **0 errors and 0 warnings**.
 
-| Page | Desktop (Performance / Accessibility / Best Practices / SEO) | Mobile (Performance / Accessibility / Best Practices / SEO) |
-| :--- | :--- | :--- |
-| `index.html` | 99 / 100 / 96 / 100 | 96 / 100 / 96 / 100 |
-| `gallery.html` | 99 / 100 / 100 / 100 | 89 / 100 / 100 / 100 |
-| `updates.html` | 100 / 100 / 100 / 100 | 97 / 100 / 100 / 100 |
-| `music.html` | 100 / 100 / 100 / 100 | 97 / 100 / 100 / 100 |
-| `thank-you.html` | 100 / 98 / 100 / 100 | 97 / 98 / 100 / 100 |
+- **Home (`index.html`)**
+  ![W3C HTML Validation — Home](assets/doc-images/cloud-runner-index-page-W3C-HTML-CSS-validation-pass.png)
+- **Gallery (`gallery.html`)**
+  ![W3C HTML Validation — Gallery](assets/doc-images/cloud-runner-gallery-page-W3C-HTML-CSS-%20validation-pass.png)
+- **Get Updates (`updates.html`)**
+  ![W3C HTML Validation — Get Updates](assets/doc-images/cloud-runner-updates-page-W3C-HTML-CSS%20validation-pass._2.png)
+- **Soundtrack (`music.html`)**
+  ![W3C HTML Validation — Soundtrack](assets/doc-images/cloud-runner-music-page-W3C-HTML-CSS-validation-pass.png)
+- **Thank You (`thank-you.html`)**
+  ![W3C HTML Validation — Thank You](assets/doc-images/cloud-runner-thank-you-page-W3C-HTML-CSS-validation-pass.png)
+- **Stylesheet (`assets/css/styles.css`)**
+  ![W3C CSS Validation — Stylesheet](assets/doc-images/cloud-runner-css-styles-W3C-HTML-CSS-validation-pass.png)
 
-* **Home (`index.html`)**
-  ![Lighthouse Desktop — Home](assets/doc-images/cloud-runner-lighthouse-index-page-desktop-check.jpeg)
-  ![Lighthouse Mobile — Home](assets/doc-images/cloud-runner-lighthouse-mobile-check.png)
+### Lighthouse Audits (Desktop & Mobile)
 
-* **Gallery (`gallery.html`)**
-  ![Lighthouse Desktop — Gallery](assets/doc-images/cloud-runner-lighthouse-gallery-desktop-check.jpeg)
-  ![Lighthouse Mobile — Gallery](assets/doc-images/cloud-runner-lighthouse-gallery-mobile-check.png)
-
-* **Get Updates (`updates.html`)**
-  ![Lighthouse Desktop — Get Updates](assets/doc-images/cloud-runner-lighthouse-updates-desktop-check.jpeg)
-  ![Lighthouse Mobile — Get Updates](assets/doc-images/cloud-runner-lighthouse-updates-mobile-check.png)
-
-* **Soundtrack (`music.html`)**
-  ![Lighthouse Desktop — Soundtrack](assets/doc-images/cloud-runner-lighthouse-music-desktop-check.jpeg)
-  ![Lighthouse Mobile — Soundtrack](assets/doc-images/cloud-runner-lighthouse-music-mobile-check.png)
-
-* **Thank You (`thank-you.html`)**
-  ![Lighthouse Desktop — Thank You](assets/doc-images/cloud-runner-lighthouse-thankyou-desktop-check.jpeg)
-  ![Lighthouse Mobile — Thank You](assets/doc-images/cloud-runner-lighthouse-thankyou-mobile-check.png)
-
-### W3C HTML Validation
-
-All five HTML pages pass the W3C Nu Html Checker with zero errors and zero warnings.
-
-* **Home (`index.html`)**[cite: 17]
-  ![W3C HTML Validation — Home](assets/doc-images/cloud-runner-index-page-W3C-HTML-CSS-validation-pass.png)[cite: 17]
-
-* **Gallery (`gallery.html`)**[cite: 16]
-  ![W3C HTML Validation — Gallery](assets/doc-images/cloud-runner-gallery-page-W3C-HTML-CSS-%20validation-pass.png)[cite: 16]
-
-* **Get Updates (`updates.html`)**[cite: 14]
-  ![W3C HTML Validation — Get Updates](assets/doc-images/cloud-runner-updates-page-W3C-HTML-CSS%20validation-pass._2.png)[cite: 14]
-
-* **Soundtrack (`music.html`)**[cite: 12]
-  ![W3C HTML Validation — Soundtrack](assets/doc-images/cloud-runner-music-page-W3C-HTML-CSS-validation-pass.png)[cite: 12]
-
-* **Thank You (`thank-you.html`)**[cite: 13]
-  ![W3C HTML Validation — Thank You](assets/doc-images/cloud-runner-thank-you-page-W3C-HTML-CSS-validation-pass.png)[cite: 13]
-
-### W3C CSS Validation
-
-The custom stylesheet (`assets/css/styles.css`) passes the W3C CSS Checker with zero errors and zero warnings[cite: 15].
-
-* **Stylesheet (`assets/css/styles.css`)**[cite: 15]
-  ![W3C CSS Validation — Stylesheet](assets/doc-images/cloud-runner-css-styles-W3C-HTML-CSS-validation-pass.png)[cite: 15]
-
-## Attribution
-
-### Frameworks, Libraries & Fonts
-
-* **[Bootstrap 5 (v5.3.8)](https://getbootstrap.com/):** Used for the responsive grid system, collapsible navigation bar, gallery carousel, and aspect-ratio video containers.
-* **[Google Fonts — Inter](https://fonts.google.com/specimen/Inter):** Used for site-wide typography.
-* **[Font Awesome / Bootstrap Icons](https://fontawesome.com/):** Used for footer and social media icons *(update to match the exact icon library linked in your `<head>`)*.
-
-### Visual & Audio Media
-
-* **Film Concept, Story & World-Building:** Original sci-fi concept (*Cloud Runner*) created by Raf Joseph.
-* **Teaser Visuals, Character Portraits & Hero Artwork:** Generated using **Google Flow** from custom art-direction prompts and optimized to `.webp` format by the author.
-* **Official Soundtrack ("Skybound"):** Original teaser track concept and audio created using **Flow Music** by the author.
-
-## Declaration of Use of AI
-
-* **Media Generation:** **Google Flow** and **Flow Music** were used to generate the promotional teaser visuals, character profile artwork, and soundtrack audio track for *Cloud Runner*.
-* **Development & Code Review Assistance:** **GitHub Copilot** (in VS Code *Ask* mode) and **Google Gemini** were used as consultative tools during development for CSS organization, W3C validation troubleshooting, Lighthouse performance auditing, and README documentation structure.
-* **Author Responsibility:** All HTML structure, Bootstrap layout integration, custom CSS styling, visual curation, testing, and final code commits were written, reviewed, and verified manually by the author.
-
-## Lighthouse Testing & Performance Audits (Desktop & Mobile)
-
-Audits were run in Chrome DevTools (Incognito) against the live GitHub Pages deployment for both **Desktop** and **Mobile** viewports, comparing the baseline run (`2026-11-20`) against the latest run (`2026-11-22`)[cite: 1, 2, 10, 11, 14, 15, 16, 17].
-
-### Key Optimisations Applied Between Runs
-* **Image Format & Compression:** Converted key assets to `.webp` and optimised file sizes to speed up Largest Contentful Paint (LCP).
-* **Above-the-Fold Priority:** Added `fetchpriority="high"` to primary hero/portrait assets, kept `loading="lazy"` on below-the-fold portraits, and preloaded the gallery header background image (`<link rel="preload" as="image" ... fetchpriority="high">`) in `gallery.html`.
-* **Viewport & Background Scaling:** Updated hero containers (including `.updates-hero` and `.updates-hero-thank-you`) to use `100svh`, `min-height: 500px`, and `background-size: cover` so desktop and mobile framing stay consistent without awkward cropping or overflow[cite: 16].
-
-### First Test vs. Latest Test Results
+Audited in Chrome DevTools (Incognito) against the live GitHub Pages site, comparing the `2026-11-20` baseline against the `2026-11-22` pass after WebP optimization, preload/priority tuning, and viewport/background sizing updates (`100svh`, `min-height: 500px`, `background-size: cover`).
 
 | Page | Viewport | First Test (`2026-11-20`)<br>Perf / Acc / BP / SEO | Latest Test (`2026-11-22`)<br>Perf / Acc / BP / SEO | Perf Delta |
 | :--- | :--- | :---: | :---: | :---: |
-| `index.html` | Desktop | 95 / 100 / — / 100 | **99 / 100 / 96 / 100**[cite: 1] | +4[cite: 1] |
-| `index.html` | Mobile | 94 / 100 / — / 100 | **96 / 100 / 96 / 100**[cite: 2] | +2[cite: 2] |
-| `gallery.html` | Desktop | 80 / 100 / — / 100 | **99 / 100 / 100 / 100**[cite: 10] | +19[cite: 10] |
-| `gallery.html` | Mobile | 73 / 100 / — / 100 | **89 / 100 / 100 / 100**[cite: 11] | +16[cite: 11] |
-| `updates.html` | Desktop | 61 / 100 / — / 100 | **100 / 100 / 100 / 100**[cite: 14] | +39[cite: 14] |
-| `updates.html` | Mobile | 98 / 100 / — / 100 | **97 / 100 / 100 / 100**[cite: 15] | -1[cite: 15] |
-| `music.html` | Desktop | *Not recorded in first set* | **100 / 100 / 100 / 100**[cite: 16] | — |
-| `music.html` | Mobile | *Not recorded in first set* | **97 / 100 / 100 / 100**[cite: 17] | — |
-| `thank-you.html` | Desktop | 85 / 98 / 100 / 100[cite: 17] | **100 / 98 / 100 / 100**[cite: 18] | +15[cite: 17, 18] |
-| `thank-you.html` | Mobile | 97 / 98 / 100 / 100[cite: 17] | **97 / 98 / 100 / 100**[cite: 12, 15] | 0[cite: 15, 17] |
+| `index.html` | Desktop | 95 / 100 / — / 100 | **99 / 100 / 96 / 100** | +4 |
+| `index.html` | Mobile | 94 / 100 / — / 100 | **96 / 100 / 96 / 100** | +2 |
+| `gallery.html` | Desktop | 80 / 100 / — / 100 | **99 / 100 / 100 / 100** | +19 |
+| `gallery.html` | Mobile | 73 / 100 / — / 100 | **89 / 100 / 100 / 100** | +16 |
+| `updates.html` | Desktop | 61 / 100 / — / 100 | **100 / 100 / 100 / 100** | +39 |
+| `updates.html` | Mobile | 98 / 100 / — / 100 | **97 / 100 / 100 / 100** | -1 |
+| `music.html` | Desktop | *Not recorded in first set* | **100 / 100 / 100 / 100** | — |
+| `music.html` | Mobile | *Not recorded in first set* | **97 / 100 / 100 / 100** | — |
+| `thank-you.html` | Desktop | 85 / 98 / 100 / 100 | **100 / 98 / 100 / 100** | +15 |
+| `thank-you.html` | Mobile | 97 / 98 / 100 / 100 | **97 / 98 / 100 / 100** | 0 |
 
-*(Note: `game.html` was included in the `2026-11-20` baseline set at **100 / 100 / 100 / 100** on Desktop and **97 / 100 / 100 / 100** on Mobile; `music.html` was audited in the latest pass[cite: 16, 17].)*
+*(Note: `game.html` was included in the `2026-11-20` baseline at 100 / 100 / 100 / 100 desktop and 97 / 100 / 100 / 100 mobile; `music.html` was audited in the `2026-11-22` pass.)*
 
-## Code Validation (W3C HTML & CSS)
+- **Home (`index.html`)**
+  
+  ![Lighthouse Desktop — Home](assets/doc-images/cloud-runner-lighthouse-index-page-desktop-check.jpeg)
 
-All HTML pages and custom CSS were validated on `2026-11-22` using the W3C Markup Validation Service (`validator.w3.org`) and the W3C CSS Validation Service (`jigsaw.w3.org/css-validator/`) via direct input[cite: 6, 7, 8, 9, 10, 11].
+  ![Lighthouse Mobile — Home](assets/doc-images/cloud-runner-lighthouse-mobile-check.png)
 
-### HTML Validation Results
+- **Gallery (`gallery.html`)**
+  
+  ![Lighthouse Desktop — Gallery](assets/doc-images/cloud-runner-lighthouse-gallery-desktop-check.jpeg)
 
-| File | Validator | Result |
-| :--- | :--- | :--- |
-| `index.html` | W3C Markup Validation Service | Passed — 0 errors, 0 warnings[cite: 6] |
-| `gallery.html` | W3C Markup Validation Service | Passed — 0 errors, 0 warnings[cite: 7] |
-| `updates.html` | W3C Markup Validation Service | Passed — 0 errors, 0 warnings[cite: 8] |
-| `thank-you.html` | W3C Markup Validation Service | Passed — 0 errors, 0 warnings[cite: 9] |
-| `music.html` | W3C Markup Validation Service | Passed — 0 errors, 0 warnings[cite: 10] |
+  ![Lighthouse Mobile — Gallery](assets/doc-images/cloud-runner-lighthouse-gallery-mobile-check.png)
 
-### CSS Validation Results
+- **Get Updates (`updates.html`)**
+  
+  ![Lighthouse Desktop — Get Updates](assets/doc-images/cloud-runner-lighthouse-updates-desktop-check.jpeg)
 
-| File | Validator | Result |
-| :--- | :--- | :--- |
-| `assets/css/styles.css` | W3C CSS Validation Service | Passed — 0 errors, 0 warnings[cite: 9, 10, 11] |
+  ![Lighthouse Mobile — Get Updates](assets/doc-images/cloud-runner-lighthouse-updates-mobile-check.png)
 
-## Credits
+- **Soundtrack (`music.html`)**
+  
+  ![Lighthouse Desktop — Soundtrack](assets/doc-images/cloud-runner-lighthouse-music-desktop-check.jpeg)
 
-### Concept, Story & Development
+  ![Lighthouse Mobile — Soundtrack](assets/doc-images/cloud-runner-lighthouse-music-mobile-check.png)
 
-* **Original Concept & World-Building:** Created for *Cloud Runner*, including the setting, character dynamics, and promotional site copy.
-* **Web Development & Design Implementation:** Built with HTML5, CSS3, Bootstrap 5, and JavaScript, with styling refinements and accessibility contrast updates developed in VS Code.
+- **Thank You (`thank-you.html`)**
+  
+  ![Lighthouse Desktop — Thank You](assets/doc-images/cloud-runner-lighthouse-thankyou-desktop-check.jpeg)
 
-### Media & Visual Assets
+  ![Lighthouse Mobile — Thank You](assets/doc-images/cloud-runner-lighthouse-thankyou-mobile-check.png)
 
-* **AI Video & Imagery:** Generated with **Google Flow** and refined/composited in **Adobe Illustrator** and **Adobe Photoshop** (including WebP optimization for web performance and the custom color palette swatch).
-* **Audio & Score Preview:** Generated with **Flow Music** for the *Cloud Runner* teaser/trailer experience.
+## Credits, Attribution & Ownership
 
-### Frameworks, Libraries & Acknowledgments
+- **Original Concept & IP:** *Cloud Runner*—including its premise, floating-island world-building, characters (including the five teenage scavengers led by **Rowan Cole**, **Toby Cole**, **Jules Mercer**, **Marek Hale**, and **Kieran Hale**, alongside **Silver Vane** and **Caspian Vane**), site copy, and web implementation—is an original concept by **Raf Joseph (`raf-src`)**.
+- **Copyright Notice:** © 2026 Raf Joseph. All rights reserved. Original written narrative, character descriptions, site copy, and custom code in this repository may not be reproduced, redistributed, or adapted into derivative works without permission.
+- **Visual & Audio Assets:** Teaser visuals, character portraits, and hero imagery were generated using **Google Flow** and refined/composited in **Adobe Illustrator** and **Adobe Photoshop** (with WebP optimization); soundtrack/audio elements (*"Skybound"*) were generated using **Flow Music** by the author, subject to tool terms.
+- **Libraries, Fonts & Mentorship:** Built with **Bootstrap 5**, **Google Fonts (`Inter`)**, and **Font Awesome** under their respective licenses, with guidance and feedback from bootcamp tutors and peers at WAES and Code Institute.
 
-* **Bootstrap 5, Font Awesome & Google Fonts:** Used for responsive layout structure, icons, and `Inter` typography.
-* **Mentorship & Feedback:** Thanks to bootcamp tutors and peers at WAES and Code Institute for guidance, feedback, and code walkthroughs during development.
+## Declaration of Use of AI
 
-## Concept Ownership & Copyright
-
-* **Original Concept & IP:** *Cloud Runner*—including its premise, floating-island world-building, and characters (including the five teenage scavengers led by **Rowan Cole**, his younger brother **Toby Cole**, their adopted brother **Jules Mercer** and the 'Gemini' twin brothers **Marek Hale** and **Kieran Hale**, alongside **Silver Vane** and **Caspian Vane**), narrative copy, and promotional website implementation—is an original concept created by **Raf Joseph (`raf-src`)**.
-* **Copyright Notice:** © 2026 Raf Joseph. All rights reserved. Original written narrative, character descriptions, site copy, and custom code in this repository may not be reproduced, redistributed, or adapted into derivative works without permission.
-* **Third-Party & Generated Assets:** AI-assisted visuals and audio generated via Google Flow / Flow Music remain subject to their respective tool terms, while Bootstrap 5, Font Awesome, and Google Fonts remain under their respective licenses.
+- **Media Generation:** **Google Flow** and **Flow Music** were used to generate promotional teaser visuals, character artwork, and soundtrack audio for *Cloud Runner*.
+- **Development & Documentation Support:** **GitHub Copilot** (VS Code *Ask* mode) and **Google Gemini** were used for consultative troubleshooting, CSS/validation/Lighthouse checks, and README organization.
+- **Author Responsibility:** All HTML, CSS, Bootstrap integration, testing, and final commits were reviewed and verified by the author.
