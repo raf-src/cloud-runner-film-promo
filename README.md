@@ -12,6 +12,7 @@ A promotional website for the original dystopian sci-fi film *Cloud Runner*.
 
 - [Purpose & User Stories](#purpose--user-stories)
 - [Features & User Benefits](#features--user-benefits)
+- [Project Planning](#project--planning)
 - [Design](#design)
 - [Technologies & Tools Used](#technologies--tools-used)
 - [Deployment](#deployment)
@@ -75,6 +76,14 @@ A promotional website for the original dystopian sci-fi film *Cloud Runner*.
 - **Soundtrack Page (`music.html`):** Dedicated showcase highlighting the soundtrack direction and teaser track (*"Skybound"*).
 - **Early-Access Updates & Confirmation (`updates.html`, `thank-you.html`):** Subscription form with native HTML5 validation that redirects to a dedicated confirmation page upon submission.
 - **Site Footer (`.site-footer`):** Consistent dark footer across all pages with copyright notice, legal/contact links, and social media links.
+
+## Project Planning
+
+Work on *Cloud Runner* was organised using a GitHub Projects board (**Cloud Runner Project Planning Board**), tracking core `must-have` features from planning through to completion.
+
+![Cloud Runner Project Planning Board](assets/images/cloud-runner-project-planning-board.jpeg)
+
+- **Tracked scope:** All six `must-have` tasks—covering the cinematic hero header, film details and synopsis grid, video teaser and media banner, responsive multi-page navigation, updates/newsletter form, and character gallery page—were completed and moved to **Done**.
 
 ## Design
 
