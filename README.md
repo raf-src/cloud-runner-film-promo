@@ -12,7 +12,7 @@ A promotional website for the original dystopian sci-fi film *Cloud Runner*.
 
 - [Purpose & User Stories](#purpose--user-stories)
 - [Features & User Benefits](#features--user-benefits)
-- [Project Planning](#project--planning)
+- [Project Planning](#project-planning)
 - [Design](#design)
 - [Technologies & Tools Used](#technologies--tools-used)
 - [Deployment](#deployment)
@@ -81,7 +81,7 @@ A promotional website for the original dystopian sci-fi film *Cloud Runner*.
 
 Work on *Cloud Runner* was organised using a GitHub Projects board (**Cloud Runner Project Planning Board**), tracking core `must-have` features from planning through to completion.
 
-![Cloud Runner Project Planning Board](assets/images/cloud-runner-project-planning-board.jpeg)
+![Cloud Runner Project Planning Board](assets/doc-images/cloud-runner-github-project-planning-board.jpeg)
 
 - **Tracked scope:** All six `must-have` tasks—covering the cinematic hero header, film details and synopsis grid, video teaser and media banner, responsive multi-page navigation, updates/newsletter form, and character gallery page—were completed and moved to **Done**.
 
