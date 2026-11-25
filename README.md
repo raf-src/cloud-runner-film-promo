@@ -120,6 +120,9 @@ The visual palette pairs deep slate and charcoal-slate backgrounds with off-whit
 - **VS Code, Git, GitHub & GitHub Pages:** Editor, version control, repository hosting, and static deployment.
 - **Google Flow:** Visual teaser/character artwork and video generation.
 - **Google Chrome DevTools & W3C Validators:** Responsiveness testing, Lighthouse auditing, and HTML/CSS validation.
+- **Custom Favicon:** Scalable SVG browser tab icon generated with Gemini and linked across all five HTML pages.
+  
+  ![Favicon Asset](assets/doc-images/cloud-runner-favicon.svg)
 
 ## Deployment
 
