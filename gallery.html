@@ -1,14 +1,25 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Set the page's text encoding and mobile-friendly layout. -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Describe this page for search engines and link previews. -->
     <meta
       name="description"
       content="Explore stills, characters, and concept art from the world of Cloud Runner."
     >
-    <link rel="preload" as="image" href="assets/images/cloud-runner-image-background-header-gallery-page.webp" fetchpriority="high">
 
+    <!-- Load the hero background image early so it is ready when the page appears. -->
+    <link
+      rel="preload"
+      as="image"
+      href="assets/images/cloud-runner-image-background-header-gallery-page.webp"
+      fetchpriority="high"
+    >
+
+    <!-- Load Bootstrap and the site's styles and icons. -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -21,6 +32,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     >
 
+    <!-- Set the icon shown in the browser tab. -->
     <link
       rel="icon"
       type="image/svg+xml"
@@ -31,12 +43,15 @@
   </head>
 
   <body>
+    <!-- Page header with navigation and the gallery title. -->
     <header class="hero gallery-hero">
+      <!-- Main navigation; Bootstrap collapses it on smaller screens. -->
       <nav
         class="navbar navbar-expand-lg navbar-dark bg-transparent cloud-navbar"
         aria-label="Primary navigation"
       >
         <div class="container-fluid cloud-navbar__inner">
+          <!-- The site name links back to the home page. -->
           <a
             class="navbar-brand cloud-home"
             href="index.html"
@@ -45,6 +60,7 @@
             CLOUD RUNNER
           </a>
 
+          <!-- This button opens and closes the navigation on smaller screens. -->
           <button
             class="navbar-toggler"
             type="button"
@@ -57,6 +73,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
 
+          <!-- Page links; "Gallery" is marked as the current page. -->
           <div class="collapse navbar-collapse" id="mainNavigation">
             <ul class="navbar-nav ms-auto align-items-lg-center">
               <li class="nav-item">
@@ -91,6 +108,7 @@
         </div>
       </nav>
 
+      <!-- Page title and short introduction. -->
       <div class="hero-content">
         <h1>GALLERY</h1>
         <br>
@@ -98,18 +116,22 @@
       </div>
     </header>
 
+    <!-- Main gallery content. -->
     <main class="updates-main pt-4 pb-4">
       <section
         class="gallery-carousel-container"
         aria-labelledby="gallery-heading"
       >
+        <!-- This heading is available to screen readers without appearing visually. -->
         <h2 class="visually-hidden" id="gallery-heading">GALLERY</h2>
-        
+
+        <!-- Desktop and tablet carousel; hidden on smaller screens. -->
         <div
           id="galleryCarousel"
           class="carousel slide gallery-carousel d-none d-md-block"
           data-bs-ride="false"
         >
+          <!-- Each slide pairs a character image with their gallery details. -->
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img
@@ -231,6 +253,7 @@
             </div>
           </div>
 
+          <!-- Controls move to the previous or next carousel slide. -->
           <button
             class="carousel-control-prev"
             type="button"
@@ -251,6 +274,7 @@
             <span class="visually-hidden">Next</span>
           </button>
 
+          <!-- Indicators let visitors jump directly to a specific slide. -->
           <div class="carousel-indicators gallery-carousel__indicators">
             <button
               type="button"
@@ -299,10 +323,7 @@
           </div>
         </div>
 
-        <!-- (For mobile devices) Desktop uses a full-bleed overlaid carousel while mobile renders 
-         a stacked card list for cleaner small-screen readability without altering 
-         carousel layout rules. -->
-
+        <!-- Mobile uses a stacked list instead of the desktop carousel. -->
         <div class="gallery-mobile-list d-md-none">
           <article>
             <img
@@ -381,11 +402,11 @@
             <h3>CASPIAN VANE</h3>
             <p>(Played by Julian Thorne) White City heir hunting the Core to prove his command.</p>
           </article>
-
         </div>
       </section>
     </main>
 
+    <!-- Footer with site links, copyright, and social-media links. -->
     <footer class="site-footer">
       <div class="site-footer__inner">
         <div class="site-footer__left">
@@ -399,6 +420,7 @@
           </p>
         </div>
 
+        <!-- Social links open in a new tab; Font Awesome supplies each icon. -->
         <nav class="site-footer__social" aria-label="Social media links">
           <a
             href="https://www.spotify.com/"
@@ -452,6 +474,7 @@
       </div>
     </footer>
 
+    <!-- Load Bootstrap's JavaScript bundle to enable the carousel and mobile menu. -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       crossorigin="anonymous"
