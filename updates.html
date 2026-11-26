@@ -1,13 +1,17 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Set the page's text encoding and mobile-friendly layout. -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Describe this page for search engines and link previews. -->
     <meta
       name="description"
       content="Subscribe for exclusive Cloud Runner Film updates."
     >
 
+    <!-- Load Bootstrap and the site's styles and icons. -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -19,6 +23,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     >
+
+    <!-- Set the icon shown in the browser tab. -->
     <link
       rel="icon"
       type="image/svg+xml"
@@ -29,12 +35,15 @@
   </head>
 
   <body>
+    <!-- Page header with navigation and a link to the signup form. -->
     <header class="hero updates-hero">
+      <!-- Main navigation; Bootstrap collapses it on smaller screens. -->
       <nav
         class="navbar navbar-expand-lg navbar-dark bg-transparent cloud-navbar"
         aria-label="Primary navigation"
       >
         <div class="container-fluid cloud-navbar__inner">
+          <!-- The site name links back to the home page. -->
           <a
             class="navbar-brand cloud-home"
             href="index.html"
@@ -43,6 +52,7 @@
             CLOUD RUNNER
           </a>
 
+          <!-- This button opens and closes the navigation on smaller screens. -->
           <button
             class="navbar-toggler"
             type="button"
@@ -55,6 +65,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
 
+          <!-- Page links; "Get Updates" is marked as the current page. -->
           <div class="collapse navbar-collapse" id="mainNavigation">
             <ul class="navbar-nav ms-auto align-items-lg-center">
               <li class="nav-item">
@@ -89,6 +100,7 @@
         </div>
       </nav>
 
+      <!-- Signup invitation; the button jumps down to the form. -->
       <div class="hero-content">
         <h1>BE THE FIRST TO KNOW</h1>
         <br>
@@ -97,8 +109,7 @@
       </div>
     </header>
 
-    <!-- Sign-up Form -->
-
+    <!-- Signup form and its submission settings. -->
     <main id="updates-form" class="updates-main">
       <div id="updates-form-wrapper" class="updates-form-wrapper">
         <form
@@ -107,6 +118,7 @@
           action="https://api.web3forms.com/submit"
           method="POST"
         >
+          <!-- Web3Forms uses these hidden fields to process and route submissions. -->
           <input
             type="hidden"
             name="access_key"
@@ -122,6 +134,8 @@
             name="subject"
             value="New Cloud Runner Updates Form Submission"
           >
+
+          <!-- Required contact details. -->
           <div class="mb-4">
             <label for="firstName">First Name</label>
             <input id="firstName" name="firstName" type="text" required>
@@ -142,6 +156,7 @@
             <input id="email" name="email" type="email" required>
           </div>
 
+          <!-- Ask the subscriber to choose a gender option. -->
           <div class="mb-4">
             <label for="gender">Gender</label>
             <select id="gender" name="gender" required>
@@ -153,6 +168,7 @@
             </select>
           </div>
 
+          <!-- Let subscribers select the film genres they prefer. -->
           <fieldset class="mb-4">
             <legend>Types of films you prefer</legend>
             <div class="row g-2">
@@ -229,6 +245,7 @@
             </p>
           </fieldset>
 
+          <!-- Collect the subscriber's communication and screening permissions. -->
           <fieldset class="mb-4">
             <!-- <legend>Transmission Preferences</legend> -->
 
@@ -268,6 +285,7 @@
             </p>
           </fieldset>
 
+          <!-- Submit the completed form. -->
           <div class="text-center">
             <button class="btn btn-outline-light updates-submit" type="submit">
               SUBSCRIBE
@@ -277,6 +295,7 @@
       </div>
     </main>
 
+    <!-- Footer with site links, copyright, and social-media links. -->
     <footer class="site-footer">
       <div class="site-footer__inner">
         <div class="site-footer__left">
@@ -290,6 +309,7 @@
           </p>
         </div>
 
+        <!-- Social links open in a new tab; Font Awesome supplies each icon. -->
         <nav class="site-footer__social" aria-label="Social media links">
           <a
             href="https://www.spotify.com/"
@@ -343,21 +363,25 @@
       </div>
     </footer>
 
+    <!-- Load Bootstrap's JavaScript bundle for interactive components. -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       crossorigin="anonymous"
     ></script>
 
     <script>
+      // Find the signup form and collect all of its genre checkboxes.
       const updatesForm = document.querySelector("#updatesForm");
       const genreBoxes = [
         ...updatesForm.querySelectorAll('input[name="filmType"]'),
       ];
 
+      // Require at least one genre and show a message if none are selected.
       function validateGenres() {
         const hasGenre = genreBoxes.some((box) => box.checked);
         const message = hasGenre ? "" : "Please choose a minimum of one genre.";
 
+        // Set or clear the browser's built-in validation message on each checkbox.
         genreBoxes.forEach((box) => {
           box.setCustomValidity(message);
         });
@@ -365,10 +389,12 @@
         return hasGenre;
       }
 
+      // Recheck the genre selection whenever a checkbox changes.
       genreBoxes.forEach((box) => {
         box.addEventListener("change", validateGenres);
       });
 
+      // Stop submission and show browser validation messages if the form is invalid.
       updatesForm.addEventListener("submit", (event) => {
         const hasGenre = validateGenres();
 
@@ -378,7 +404,7 @@
         }
       });
 
-      // Set the custom constraint before the first submission attempt.
+      // Set the custom validation message before the first submission attempt.
       validateGenres();
     </script>
   </body>
